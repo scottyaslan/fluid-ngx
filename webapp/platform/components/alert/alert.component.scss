@@ -1,0 +1,151 @@
+/*
+ * (c) 2018-2020 Cloudera, Inc. All rights reserved.
+ *
+ *  This code is provided to you pursuant to your written agreement with Cloudera, which may be the terms of the
+ *  Affero General Public License version 3 (AGPLv3), or pursuant to a written agreement with a third party authorized
+ *  to distribute this code.  If you do not have a written agreement with Cloudera or with an authorized and
+ *  properly licensed third party, you do not have any rights to this code.
+ *
+ *  If this code is provided to you under the terms of the AGPLv3:
+ *   (A) CLOUDERA PROVIDES THIS CODE TO YOU WITHOUT WARRANTIES OF ANY KIND;
+ *   (B) CLOUDERA DISCLAIMS ANY AND ALL EXPRESS AND IMPLIED WARRANTIES WITH RESPECT TO THIS CODE, INCLUDING BUT NOT
+ *       LIMITED TO IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE;
+ *   (C) CLOUDERA IS NOT LIABLE TO YOU, AND WILL NOT DEFEND, INDEMNIFY, OR HOLD YOU HARMLESS FOR ANY CLAIMS ARISING
+ *       FROM OR RELATED TO THE CODE; AND
+ *   (D) WITH RESPECT TO YOUR EXERCISE OF ANY RIGHTS GRANTED TO YOU FOR THE CODE, CLOUDERA IS NOT LIABLE FOR ANY
+ *       DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES INCLUDING, BUT NOT LIMITED
+ *       TO, DAMAGES RELATED TO LOST REVENUE, LOST PROFITS, LOSS OF INCOME, LOSS OF BUSINESS ADVANTAGE OR
+ *       UNAVAILABILITY, OR LOSS OR CORRUPTION OF DATA.
+ */
+
+.alert {
+    display: flex;
+    border-radius: var(--default-box-border-radius);
+    border: 1px solid;
+    line-height: 1.43;
+    color: var(--gray-900);
+}
+
+.alert-close-icon {
+    cursor: pointer;
+}
+
+.alert-error {
+    border-color: var(--red-400);
+    background-color: var(--red-50);
+
+    & mat-icon {
+        color: var(--red-400);
+    }
+}
+
+.alert-warning {
+    border-color: var(--orange-400);
+    background-color: var(--orange-50);
+
+    & mat-icon {
+        color: var(--orange-400);
+    }
+}
+
+.alert-unknown {
+    border-color: var(--gray-500);
+    background-color: var(--gray-50);
+
+    & mat-icon {
+        color: var(--gray-500);
+    }
+}
+
+.alert-info {
+    border-color: var(--blue-400);
+    background-color: var(--blue-50);
+
+    & mat-icon {
+        color: var(--blue-400);
+    }
+}
+
+.alert-success {
+    border-color: var(--green-400);
+    background-color: var(--green-50);
+
+    & mat-icon {
+        color: var(--green-400);
+    }
+}
+
+.alert-small {
+    display: grid;
+    grid-template-columns: 40px auto 40px;
+    position: relative;
+    width: 100%;
+    height: 36px;
+
+    & mat-icon {
+        height: 20px;
+        width: 20px;
+        position: relative;
+        left: 12px;
+        top: 8px;
+    }
+
+    & mat-icon.alert-close-icon {
+        height: 12px;
+        width: 12px;
+        top: 9px;
+        left: 16px;
+    }
+}
+
+.alert-large {
+    display: grid;
+    grid-template-columns: 64px auto 37px;
+    position: relative;
+    width: 100%;
+
+    & mat-icon {
+        height: 24px;
+        width: 24px;
+        position: relative;
+        left: 24px;
+        top: 24px;
+    }
+
+    & mat-icon.alert-close-icon {
+        height: 16px;
+        width: 16px;
+        top: 8px;
+        left: 14px;
+    }
+}
+
+.alert-small-container {
+    height: 20px;
+    position: relative;
+    top: 8px;
+}
+
+.alert-large-container {
+    display: grid;
+    grid-template-rows: 27px auto;
+    position: relative;
+    margin-top: var(--margin-lg);
+}
+
+.alert-small-content {
+    display: grid;
+}
+
+.alert-large-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.alert-large-content {
+    height: auto;
+    line-height: 20px;
+    overflow: hidden;
+    margin-bottom: var(--margin-lg);
+}

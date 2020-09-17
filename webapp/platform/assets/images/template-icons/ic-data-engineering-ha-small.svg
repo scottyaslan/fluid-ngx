@@ -1,0 +1,29 @@
+<!--
+  (c) 2018-2020 Cloudera, Inc. All rights reserved.
+
+  This code is provided to you pursuant to your written agreement with Cloudera, which may be the terms of the
+  Affero General Public License version 3 (AGPLv3), or pursuant to a written agreement with a third party authorized
+  to distribute this code.  If you do not have a written agreement with Cloudera or with an authorized and
+  properly licensed third party, you do not have any rights to this code.
+
+  If this code is provided to you under the terms of the AGPLv3:
+   (A) CLOUDERA PROVIDES THIS CODE TO YOU WITHOUT WARRANTIES OF ANY KIND;
+   (B) CLOUDERA DISCLAIMS ANY AND ALL EXPRESS AND IMPLIED WARRANTIES WITH RESPECT TO THIS CODE, INCLUDING BUT NOT
+       LIMITED TO IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE;
+   (C) CLOUDERA IS NOT LIABLE TO YOU, AND WILL NOT DEFEND, INDEMNIFY, OR HOLD YOU HARMLESS FOR ANY CLAIMS ARISING
+       FROM OR RELATED TO THE CODE; AND
+   (D) WITH RESPECT TO YOUR EXERCISE OF ANY RIGHTS GRANTED TO YOU FOR THE CODE, CLOUDERA IS NOT LIABLE FOR ANY
+       DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES INCLUDING, BUT NOT LIMITED
+       TO, DAMAGES RELATED TO LOST REVENUE, LOST PROFITS, LOSS OF INCOME, LOSS OF BUSINESS ADVANTAGE OR
+       UNAVAILABILITY, OR LOSS OR CORRUPTION OF DATA.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#196AED" d="M19.43 9.759a8.16 8.16 0 0 0-9.66 9.671H0V0h19.43v9.759z"/>
+        <path fill="#FFF" d="M8.783 2H13v1.19h-2.775v1.656h2.746v1.19h-2.746V7.81H13V9H8.783V2zM4.334 7.81c.503 0 .897-.097 1.182-.292.284-.195.48-.46.588-.793.108-.334.162-.742.162-1.225 0-.482-.056-.892-.167-1.23a1.491 1.491 0 0 0-.593-.793c-.285-.191-.675-.287-1.172-.287h-.892v4.62h.892zM2 2h2.57c1.124 0 1.941.317 2.451.952.51.634.765 1.484.765 2.548 0 1.078-.257 1.93-.77 2.558C6.503 8.686 5.687 9 4.569 9H2V2z"/>
+        <g fill-rule="nonzero">
+            <path fill="#2135B0" d="M17.757 23.935a6.188 6.188 0 1 1 0-12.376 6.188 6.188 0 0 1 0 12.376z"/>
+            <path fill="#FFF" d="M14.149 15.456h.904v1.765h1.642v-1.765h.904v4.341h-.904v-1.82h-1.642v1.82h-.904v-4.341zm6.969 3.431h-1.691l-.277.91h-.935l1.378-4.341h1.353l1.377 4.341h-.928l-.277-.91zm-.21-.695l-.633-2.072h-.012l-.627 2.072h1.273z"/>
+        </g>
+    </g>
+</svg>

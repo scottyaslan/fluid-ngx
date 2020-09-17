@@ -1,0 +1,26 @@
+<!--
+  (c) 2018-2020 Cloudera, Inc. All rights reserved.
+
+  This code is provided to you pursuant to your written agreement with Cloudera, which may be the terms of the
+  Affero General Public License version 3 (AGPLv3), or pursuant to a written agreement with a third party authorized
+  to distribute this code.  If you do not have a written agreement with Cloudera or with an authorized and
+  properly licensed third party, you do not have any rights to this code.
+
+  If this code is provided to you under the terms of the AGPLv3:
+   (A) CLOUDERA PROVIDES THIS CODE TO YOU WITHOUT WARRANTIES OF ANY KIND;
+   (B) CLOUDERA DISCLAIMS ANY AND ALL EXPRESS AND IMPLIED WARRANTIES WITH RESPECT TO THIS CODE, INCLUDING BUT NOT
+       LIMITED TO IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE;
+   (C) CLOUDERA IS NOT LIABLE TO YOU, AND WILL NOT DEFEND, INDEMNIFY, OR HOLD YOU HARMLESS FOR ANY CLAIMS ARISING
+       FROM OR RELATED TO THE CODE; AND
+   (D) WITH RESPECT TO YOUR EXERCISE OF ANY RIGHTS GRANTED TO YOU FOR THE CODE, CLOUDERA IS NOT LIABLE FOR ANY
+       DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES INCLUDING, BUT NOT LIMITED
+       TO, DAMAGES RELATED TO LOST REVENUE, LOST PROFITS, LOSS OF INCOME, LOSS OF BUSINESS ADVANTAGE OR
+       UNAVAILABILITY, OR LOSS OR CORRUPTION OF DATA.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g fill="none" fill-rule="evenodd" transform="translate(2 2)">
+        <circle cx="10" cy="10" r="10" fill="#ECE2FE"/>
+        <path fill="#9678D3" d="M11.074 7.574V10.6h-3.4v3.64h7.467V7.575h-4.067zm2.458 1.82V8.19h.942v2.41h-2.733V8.19h.942v1.205h.849zm0 3.026v-1.205h.942v2.41h-2.733v-2.41h.942v1.205h.849zm-3.4 0v-1.205h.942v2.41H8.34v-2.41h.942v1.205h.849zm-3.169 2.198v.554h1.342v.737H6.963v.554h8.889v-.554H14.51v-.737h1.342v-.554H6.963zm4.746 1.291h2.2v-.737h-2.2v.737zm-2.804 0h2.2v-.737h-2.2v.737z"/>
+        <path fill="#6F47BF" d="M9.926 3.5v5.926H4V3.5h5.926zM8.815 4.611H7.703v1.111h-1.48l-.001-1.111h-1.11v3.704h3.703V4.61z"/>
+    </g>
+</svg>

@@ -1,0 +1,749 @@
+/*
+ *  (c) 2018-2020 Cloudera, Inc. All rights reserved.
+ *
+ *    This code is provided to you pursuant to your written agreement with Cloudera, which may be the terms of the
+ *   Affero General Public License version 3 (AGPLv3), or pursuant to a written agreement with a third party authorized
+ *   to distribute this code.  If you do not have a written agreement with Cloudera or with an authorized and
+ *   properly licensed third party, you do not have any rights to this code.
+ *
+ *    If this code is provided to you under the terms of the AGPLv3:
+ *    (A) CLOUDERA PROVIDES THIS CODE TO YOU WITHOUT WARRANTIES OF ANY KIND;
+ *    (B) CLOUDERA DISCLAIMS ANY AND ALL EXPRESS AND IMPLIED WARRANTIES WITH RESPECT TO THIS CODE, INCLUDING BUT NOT
+ *        LIMITED TO IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE;
+ *    (C) CLOUDERA IS NOT LIABLE TO YOU, AND WILL NOT DEFEND, INDEMNIFY, OR HOLD YOU HARMLESS FOR ANY CLAIMS ARISING
+ *        FROM OR RELATED TO THE CODE; AND
+ *    (D) WITH RESPECT TO YOUR EXERCISE OF ANY RIGHTS GRANTED TO YOU FOR THE CODE, CLOUDERA IS NOT LIABLE FOR ANY
+ *        DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES INCLUDING, BUT NOT LIMITED
+ *        TO, DAMAGES RELATED TO LOST REVENUE, LOST PROFITS, LOSS OF INCOME, LOSS OF BUSINESS ADVANTAGE OR
+ *        UNAVAILABILITY, OR LOSS OR CORRUPTION OF DATA.
+ *
+ */
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import "~@angular/material/theming";
+// Plus imports for other components in your app.
+@import "./custom-theme-variables.scss";
+
+$fontPrimary: "Roboto", sans-serif;
+$fontSecondary: "Robot Slab", sans-serif;
+$fontMedium: "Roboto Medium", sans-serif;
+$fontLight: "Roboto Light", sans-serif;
+
+$cfxFontPath: "../../../../../node_modules/roboto-fontface/fonts" !default;
+$cfxFontPath: "../../../../node_modules/roboto-fontface/fonts";
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Roboto Light"), local("Roboto-Light"),
+        url("#{$cfxFontPath}/roboto/Roboto-Light.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 300;
+    src: local("Roboto LightItalic"), local("Roboto-LightItalic"),
+        url("#{$cfxFontPath}/roboto/Roboto-LightItalic.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Roboto Regular"), local("Roboto-Regular"),
+        url("#{$cfxFontPath}/roboto/Roboto-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Roboto Medium"), local("Roboto-Medium"),
+        url("#{$cfxFontPath}/roboto/Roboto-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    src: local("Roboto Bold"), local("Roboto-Bold"),
+        url("#{$cfxFontPath}/roboto/Roboto-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: normal;
+    src: local("Roboto Italic"), local("Roboto-Italic"),
+        url("#{$cfxFontPath}/roboto/Roboto-RegularItalic.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: normal;
+    src: local("RobotoSlab Regular"), local("RobotoSlab-Regular"),
+        url("#{$cfxFontPath}/roboto-slab/Roboto-Slab-Regular.woff2")
+            format("woff2");
+}
+
+@font-face {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: bold;
+    src: local("RobotoSlab Bold"), local("RobotoSlab-Bold"),
+        url("#{$cfxFontPath}/roboto-slab/Roboto-Slab-Bold.woff2")
+            format("woff2");
+}
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$cfx-app-primary: mat-palette($mat-cfx);
+$cfx-app-accent: mat-palette($mat-cfx, 500);
+
+// The warn palette is optional (defaults to red).
+$cfx-app-warn: mat-palette($mat-cfx);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$cfx-app-theme: mat-light-theme(
+    $cfx-app-primary,
+    $cfx-app-accent,
+    $cfx-app-warn
+);
+
+// Define a mixin that accepts a theme and outputs the theme-specific styles.
+@mixin default-theme($theme) {
+    body {
+        color: $primary-text;
+        background-color: $default-background-color;
+    }
+
+    mat-sidenav-container {
+        min-width: 1366px;
+        min-height: 768px;
+    }
+
+    .mat-drawer-backdrop.mat-drawer-shown {
+        background-color: rgba(0, 0, 0, 0.25);
+    }
+
+    .mat-drawer:not(.mat-drawer-side) {
+        border-radius: 3px;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.35);
+        background-color: var(--white);
+    }
+
+    .mat-text-title {
+        padding-top: 6px;
+    }
+}
+
+@mixin form-theme($theme) {
+    .form-group {
+        & > mat-form-field:not(.mat-form-field-type-mat-chip-list) {
+            width: 400px;
+        }
+    }
+
+    mat-form-field {
+        &.mat-form-field-type-mat-chip-list {
+            .mat-form-field-wrapper {
+                padding-bottom: 0;
+
+                .mat-form-field-underline {
+                    display: none;
+                }
+
+                .mat-form-field-infix {
+                    width: 100%;
+                    margin-top: 0;
+                    border-top: none;
+                }
+
+                .mat-chip-list-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    margin: -4px;
+                    align-items: flex-start;
+
+                    .mat-chip {
+                        &.mat-standard-chip {
+                            &.mat-primary {
+                                background-color: var(--gray-500);
+                                color: white;
+                                font-weight: 200;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    mat-form-field:not(.mat-form-field-type-mat-chip-list) {
+        width: 100%;
+
+        .mat-form-field-wrapper {
+            border-radius: $default-box-border-radius;
+            border: solid 1px var(--gray-400);
+            background-color: var(--white);
+            padding: 0px !important;
+            line-height: 1.2;
+            cursor: pointer;
+
+            .mat-form-field-infix {
+                padding: 7px 0px !important;
+                margin-top: 0;
+                border: none;
+
+                textarea {
+                    padding-left: 8px;
+                    padding-right: 8px;
+                    position: relative;
+                    top: -3px;
+                    overflow: hidden;
+                }
+
+                .mat-form-field-label-wrapper {
+                    .mat-form-field-label {
+                        top: 14px;
+                        left: 8px;
+                        color: var(--gray-900);
+                    }
+                }
+
+                .mat-select {
+                    &.with-opt-group {
+                        .mat-select-trigger {
+                            left: 32px;
+
+                            .mat-select-value {
+                                left: -24px;
+                            }
+
+                            .mat-select-arrow-wrapper {
+                                right: 7px;
+                            }
+                        }
+                    }
+
+                    .mat-select-trigger {
+                        left: 15px;
+                        width: calc(100% - 30px);
+
+                        .mat-select-value {
+                            position: relative;
+                            left: -7px;
+                        }
+
+                        .mat-select-arrow-wrapper {
+                            position: relative;
+                            right: -9px;
+                            top: 1px;
+                        }
+                    }
+
+                    &.mat-select-invalid {
+                        .mat-select-arrow {
+                            color: var(--gray-900);
+                        }
+                    }
+                }
+            }
+
+            .mat-form-field-underline,
+            .mat-form-field-subscript-wrapper {
+                display: none;
+            }
+        }
+
+        &.mat-focused {
+            .mat-form-field-wrapper {
+                box-shadow: 0 0 0 4px var(--blue-100);
+                border: solid 1px var(--blue-500);
+                outline: none;
+            }
+
+            .mat-select-arrow {
+                color: var(--blue-500);
+            }
+        }
+
+        &.error,
+        &.mat-form-field-invalid {
+            .mat-form-field-wrapper {
+                border: solid 1px var(--red-500);
+                background-color: var(--red-50);
+            }
+        }
+
+        &.disabled {
+            .mat-form-field-wrapper {
+                border: solid 1px var(--gray-200);
+                color: var(--gray-400);
+                cursor: not-allowed;
+
+                .mat-select-trigger {
+                    cursor: not-allowed;
+                }
+
+                .mat-form-field-label-wrapper > .mat-form-field-label {
+                    color: var(--gray-400);
+                }
+            }
+        }
+    }
+
+    .mat-menu-panel,
+    .mat-autocomplete-panel,
+    .mat-select-panel {
+        border-radius: $default-box-border-radius;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+        border: solid 1px var(--gray-300);
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: var(--pad-sm) 0 !important;
+
+        button,
+        mat-option {
+            font-size: 14px;
+
+            &.mat-menu-item,
+            &.mat-option {
+                line-height: 32px;
+                height: 32px;
+                color: var(--gray-700);
+
+                &.mat-selected:not(.mat-option-multiple) {
+                    background: var(--gray-200);
+                    color: var(--gray-900);
+                }
+
+                &.disabled,
+                &.mat-option-disabled:not(.mat-active) {
+                    opacity: 0.2;
+                    cursor: not-allowed;
+                }
+            }
+
+            .mat-option-text {
+                display: flex;
+                align-items: center;
+
+                .provider-logo {
+                    margin-right: 10px;
+                    height: 26px;
+                }
+            }
+        }
+
+        mat-optgroup {
+            .mat-optgroup-label {
+                font-size: 16px;
+                color: var(--gray-900);
+
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+    .mat-menu-panel,
+    .mat-autocomplete-panel {
+        margin-top: var(--pad-xs);
+        margin-bottom: 0px;
+    }
+    .mat-menu-panel {
+        min-height: initial !important;
+    }
+}
+
+@mixin checkbox-theme($theme) {
+    #cfx-ui {
+        mat-checkbox {
+            .mat-checkbox-background,
+            .mat-checkbox-frame {
+                border-radius: $default-box-border-radius;
+                border-color: $checkbox-border-color;
+            }
+
+            .mat-checkbox-frame {
+                border-width: 1px;
+            }
+        }
+
+        .mat-checkbox-disabled {
+            cursor: not-allowed;
+        }
+    }
+}
+
+@mixin table-theme($theme) {
+    #cfx-ui {
+        mat-paginator {
+            .mat-form-field-underline {
+                display: none;
+            }
+
+            &.mat-paginator {
+                background: none;
+                height: 37px;
+
+                .mat-paginator-container {
+                    min-height: initial;
+                    justify-content: flex-start;
+                    padding: 0;
+
+                    .mat-icon-button {
+                        width: 24px;
+                        height: 24px;
+                        line-height: 22px;
+                    }
+
+                    .mat-paginator-page-size {
+                        align-items: center;
+                        margin-right: var(--pad-sm);
+
+                        mat-form-field {
+                            width: 55px;
+
+                            .mat-select-trigger {
+                                left: 15px;
+                                width: calc(100% - 15px);
+                            }
+
+                            .mat-select-arrow-wrapper {
+                                right: 5px;
+                            }
+                        }
+                    }
+                }
+
+                .mat-paginator-page-size-select {
+                    margin: 0 var(--pad-xs);
+                }
+
+                .mat-paginator-icon {
+                    width: 23px;
+                }
+            }
+        }
+
+        .mat-table {
+            border-radius: $default-box-border-radius;
+            background: none;
+            margin-top: 0px;
+
+            .mat-footer-row,
+            .mat-header-row,
+            .mat-row {
+                background: none;
+                border-color: var(--gray-200);
+                border-bottom-width: 1px;
+                border-style: solid;
+
+                &.highlight {
+                    td {
+                        background: var(--gray-40);
+                    }
+                }
+
+                td,
+                th {
+                    border: none;
+                    vertical-align: middle;
+                }
+            }
+
+            tr {
+                height: initial;
+
+                .cell-content {
+                    min-height: 41px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    text-align: left;
+
+                    &.small {
+                        font-size: 12px;
+                    }
+                }
+
+                td:last-of-type {
+                    padding-right: var(--pad-sm);
+                }
+
+                .labels {
+                    span {
+                        font-size: 10px;
+                        margin-right: 5px;
+
+                        &:last-of-type {
+                            margin-right: 0px;
+                        }
+
+                        white-space: nowrap;
+                    }
+                }
+            }
+
+            .mat-header-row {
+                border-color: var(--gray-300);
+
+                .mat-header-cell {
+                    font-weight: 400;
+                    color: var(--gray-700);
+
+                    .mat-sort-header-sorted {
+                        color: var(--gray-900);
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .mat-header-cell,
+            .mat-cell {
+                padding: 0;
+
+                .mat-checkbox {
+                    margin-left: var(--pad-sm);
+                    margin-right: 5px;
+                }
+            }
+
+            .mat-cell {
+                color: var(--gray-900);
+            }
+        }
+    }
+}
+
+@mixin slider-theme($theme) {
+    #cfx-ui {
+        mat-slide-toggle {
+            height: 20px;
+            line-height: 20px;
+
+            .mat-slide-toggle-bar {
+                height: 20px;
+                width: 36px;
+                border-radius: 10px;
+                border: solid 1px var(--gray-600);
+                background-color: var(--gray-300);
+            }
+
+            .mat-slide-toggle-ripple {
+                top: calc(50% - 20px);
+                left: calc(50% + -30px);
+            }
+
+            .mat-slide-toggle-thumb-container {
+                transform: translate3d(1px, 0, 0);
+                height: 20px;
+                width: 36px;
+                top: 0;
+            }
+
+            &.mat-checked .mat-slide-toggle-thumb-container {
+                transform: translate3d(19px, 0, 0);
+            }
+
+            .mat-slide-toggle-thumb {
+                height: 16px;
+                width: 16px;
+                box-shadow: 0 1px 1px 0 var(--black-25);
+                top: 2px;
+                position: relative;
+            }
+
+            &.mat-checked {
+                .mat-slide-toggle-bar {
+                    border: solid 1px var(--blue-400);
+                    background-color: var(--blue-400);
+                }
+
+                .mat-slide-toggle-thumb {
+                    background-color: var(--white);
+                }
+            }
+
+            &.medium {
+                height: 16px;
+                line-height: 16px;
+
+                .mat-slide-toggle-bar {
+                    height: 16px;
+                    width: 27px;
+                    border-radius: 8px;
+                }
+
+                .mat-slide-toggle-ripple {
+                    top: calc(50% - 20px);
+                    left: calc(50% - 26px);
+                }
+
+                .mat-slide-toggle-thumb-container {
+                    transform: translate3d(1px, 0, 0);
+                    height: 16px;
+                    width: 27px;
+                    top: 0;
+                }
+
+                &.mat-checked .mat-slide-toggle-thumb-container {
+                    transform: translate3d(13px, 0, 0);
+                }
+
+                &.mat-pending:not(.mat-checked)
+                    .mat-slide-toggle-thumb-container {
+                    transform: translate3d(7.5px, 0, 0);
+                }
+
+                .mat-slide-toggle-thumb {
+                    height: 12px;
+                    width: 12px;
+                    box-shadow: 0 1px 1px 0 var(--black-25);
+                    top: 2px;
+                    position: relative;
+                }
+            }
+
+            &.mat-pending:not(.mat-checked) {
+                .mat-slide-toggle-bar {
+                    border: solid 1px var(--blue-200);
+                    background-color: var(--blue-200);
+                }
+
+                .mat-slide-toggle-thumb {
+                    background-color: var(--white);
+
+                    &::after {
+                        content: "";
+                        background: url("/platform/assets/cdp-icons/ic-status-in-progress.svg");
+                        background-size: 12px 12px;
+                        position: absolute;
+                        width: 12px;
+                        height: 12px;
+                        animation: spin 4s linear infinite;
+                    }
+
+                    @keyframes spin {
+                        100% {
+                            -webkit-transform: rotate(360deg);
+                            transform: rotate(360deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin tab-theme($theme) {
+    nav[mat-tab-nav-bar] a,
+    .mat-tab-labels .mat-tab-label {
+        height: auto;
+        min-width: 79px;
+        margin-right: var(--margin-md);
+        padding: 0;
+        opacity: 1;
+        color: (--grey-700);
+    }
+
+    nav[mat-tab-nav-bar] a,
+    .mat-tab-labels .mat-tab-label .mat-tab-label-content {
+        padding: var(--pad-sm) 0;
+        font-weight: normal;
+    }
+
+    nav[mat-tab-nav-bar] a.mat-tab-label-active,
+    .mat-tab-labels .mat-tab-label-active {
+        color: var(--blue-500);
+    }
+}
+
+@mixin menu-theme($theme) {
+    .mat-menu-panel {
+        border-radius: 3px;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+
+        .mat-menu-content {
+            .mat-menu-item {
+                mat-icon {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: var(--margin-xs) !important;
+                    vertical-align: baseline !important;
+                    line-height: 20px;
+                }
+
+                &:disabled {
+                    cursor: not-allowed;
+                }
+            }
+        }
+    }
+}
+
+@mixin dialog-theme($theme) {
+    #cfx-ui {
+        .mat-dialog-container {
+            padding: var(--pad-lg) 0 var(--pad-lg) var(--pad-lg);
+            border-radius: 3px;
+            box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.35);
+            background-color: var(--white);
+        }
+
+        .cdk-overlay-backdrop.cdk-overlay-backdrop-showing:not(.cdk-overlay-transparent-backdrop) {
+            background-color: rgba(0, 0, 0, 0.25);
+        }
+    }
+}
+
+@mixin progress-bar-theme($theme) {
+    .mat-progress-bar {
+        border-radius: 2px;
+    }
+
+    .mat-progress-bar-fill::after {
+        background-color: var(--blue-500);
+    }
+
+    .mat-progress-bar-buffer {
+        background-color: var(--gray-200);
+    }
+}
+
+.mat-card-title {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1.33;
+}
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($cfx-app-theme);
+@include default-theme($cfx-app-theme);
+@include checkbox-theme($cfx-app-theme);
+@include table-theme($cfx-app-theme);
+@include form-theme($cfx-app-theme);
+@include slider-theme($cfx-app-theme);
+@include tab-theme($cfx-app-theme);
+@include menu-theme($cfx-app-theme);
+@include dialog-theme($cfx-app-theme);
+@include progress-bar-theme($cfx-app-theme);

@@ -1,0 +1,26 @@
+<!--
+  ~  (c) 2018-2020 Cloudera, Inc. All rights reserved.
+  ~
+  ~    This code is provided to you pursuant to your written agreement with Cloudera, which may be the terms of the
+  ~   Affero General Public License version 3 (AGPLv3), or pursuant to a written agreement with a third party authorized
+  ~   to distribute this code.  If you do not have a written agreement with Cloudera or with an authorized and
+  ~   properly licensed third party, you do not have any rights to this code.
+  ~
+  ~    If this code is provided to you under the terms of the AGPLv3:
+  ~    (A) CLOUDERA PROVIDES THIS CODE TO YOU WITHOUT WARRANTIES OF ANY KIND;
+  ~    (B) CLOUDERA DISCLAIMS ANY AND ALL EXPRESS AND IMPLIED WARRANTIES WITH RESPECT TO THIS CODE, INCLUDING BUT NOT
+  ~        LIMITED TO IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE;
+  ~    (C) CLOUDERA IS NOT LIABLE TO YOU, AND WILL NOT DEFEND, INDEMNIFY, OR HOLD YOU HARMLESS FOR ANY CLAIMS ARISING
+  ~        FROM OR RELATED TO THE CODE; AND
+  ~    (D) WITH RESPECT TO YOUR EXERCISE OF ANY RIGHTS GRANTED TO YOU FOR THE CODE, CLOUDERA IS NOT LIABLE FOR ANY
+  ~        DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES INCLUDING, BUT NOT LIMITED
+  ~        TO, DAMAGES RELATED TO LOST REVENUE, LOST PROFITS, LOSS OF INCOME, LOSS OF BUSINESS ADVANTAGE OR
+  ~        UNAVAILABILITY, OR LOSS OR CORRUPTION OF DATA.
+  ~
+  -->
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+  <g transform="translate(3 3)" fill="none" fill-rule="evenodd">
+    <rect fill="#F96702" width="18" height="18" rx="2.25"/>
+    <path d="M12.8 9.249h.864L12.518 7.58h-.874L12.8 9.25zm2.086 3.03l-1.247-1.807-1.263 1.808h-.823l3.272-4.699h.834l-1.583 2.265 1.674 2.434h-.864zM9.994 8.979c-.234-.487-.681-.772-1.159-.772-.864 0-1.372.73-1.372 1.724 0 .995.508 1.725 1.372 1.725.478 0 .925-.285 1.159-.772V8.978zm0 2.752c-.224.338-.712.645-1.27.645-1.322 0-2.033-1.111-2.033-2.445 0-1.322.711-2.444 2.032-2.444.56 0 1.047.307 1.27.645V5.625h.773v6.655h-.772v-.55zm-6.952-.741c.147.487.584.72 1.13.72.556 0 .983-.223.983-.7 0-.327-.238-.528-.72-.655l-.925-.244c-.661-.169-1.123-.508-1.123-1.238 0-.836.724-1.386 1.67-1.386 1.028 0 1.637.508 1.805 1.333h-.76c-.136-.423-.49-.666-1.056-.666-.462 0-.92.222-.92.677 0 .317.237.466.678.592l.903.223c.798.211 1.187.656 1.187 1.312 0 .889-.735 1.418-1.733 1.418-1.018 0-1.764-.519-1.911-1.386h.792z" fill="#000"/>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<!--
+  ~  (c) 2018-2020 Cloudera, Inc. All rights reserved.
+  ~
+  ~    This code is provided to you pursuant to your written agreement with Cloudera, which may be the terms of the
+  ~   Affero General Public License version 3 (AGPLv3), or pursuant to a written agreement with a third party authorized
+  ~   to distribute this code.  If you do not have a written agreement with Cloudera or with an authorized and
+  ~   properly licensed third party, you do not have any rights to this code.
+  ~
+  ~    If this code is provided to you under the terms of the AGPLv3:
+  ~    (A) CLOUDERA PROVIDES THIS CODE TO YOU WITHOUT WARRANTIES OF ANY KIND;
+  ~    (B) CLOUDERA DISCLAIMS ANY AND ALL EXPRESS AND IMPLIED WARRANTIES WITH RESPECT TO THIS CODE, INCLUDING BUT NOT
+  ~        LIMITED TO IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE;
+  ~    (C) CLOUDERA IS NOT LIABLE TO YOU, AND WILL NOT DEFEND, INDEMNIFY, OR HOLD YOU HARMLESS FOR ANY CLAIMS ARISING
+  ~        FROM OR RELATED TO THE CODE; AND
+  ~    (D) WITH RESPECT TO YOUR EXERCISE OF ANY RIGHTS GRANTED TO YOU FOR THE CODE, CLOUDERA IS NOT LIABLE FOR ANY
+  ~        DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES INCLUDING, BUT NOT LIMITED
+  ~        TO, DAMAGES RELATED TO LOST REVENUE, LOST PROFITS, LOSS OF INCOME, LOSS OF BUSINESS ADVANTAGE OR
+  ~        UNAVAILABILITY, OR LOSS OR CORRUPTION OF DATA.
+  ~
+  -->
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+  <path d="M18.584 7.467l-2.186 2.087-1.955-1.956 2.066-2.167a.57.57 0 01.18-.13l2.006 2.005a.502.502 0 01-.111.161zM8.156 17.444l-2.145.545.544-2.146 6.488-6.784 1.895 1.895-6.782 6.49zm12.12-11.408L17.96 3.718c-.726-.725-1.985-.594-2.892.302L4.72 14.834 3.25 20.75l5.914-1.471 10.83-10.37c.888-.888 1.009-2.147.283-2.873z" fill="currentColor" fill-rule="evenodd"/>
+</svg>

@@ -1,0 +1,565 @@
+<!--
+  ~  (c) 2018-2020 Cloudera, Inc. All rights reserved.
+  ~
+  ~    This code is provided to you pursuant to your written agreement with Cloudera, which may be the terms of the
+  ~   Affero General Public License version 3 (AGPLv3), or pursuant to a written agreement with a third party authorized
+  ~   to distribute this code.  If you do not have a written agreement with Cloudera or with an authorized and
+  ~   properly licensed third party, you do not have any rights to this code.
+  ~
+  ~    If this code is provided to you under the terms of the AGPLv3:
+  ~    (A) CLOUDERA PROVIDES THIS CODE TO YOU WITHOUT WARRANTIES OF ANY KIND;
+  ~    (B) CLOUDERA DISCLAIMS ANY AND ALL EXPRESS AND IMPLIED WARRANTIES WITH RESPECT TO THIS CODE, INCLUDING BUT NOT
+  ~        LIMITED TO IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE;
+  ~    (C) CLOUDERA IS NOT LIABLE TO YOU, AND WILL NOT DEFEND, INDEMNIFY, OR HOLD YOU HARMLESS FOR ANY CLAIMS ARISING
+  ~        FROM OR RELATED TO THE CODE; AND
+  ~    (D) WITH RESPECT TO YOUR EXERCISE OF ANY RIGHTS GRANTED TO YOU FOR THE CODE, CLOUDERA IS NOT LIABLE FOR ANY
+  ~        DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES INCLUDING, BUT NOT LIMITED
+  ~        TO, DAMAGES RELATED TO LOST REVENUE, LOST PROFITS, LOSS OF INCOME, LOSS OF BUSINESS ADVANTAGE OR
+  ~        UNAVAILABILITY, OR LOSS OR CORRUPTION OF DATA.
+  ~
+  -->
+<p>A showroom for Cloudera's fluidX components implemented in Angular and following the Angular Material Design Specification as implemented during the development of DFX.</p>
+<div class="pad-top-md">
+    <mat-card>
+        <mat-card-title>
+            <span>Stepper</span>
+        </mat-card-title>
+        <div>
+            <cfx-stepper [steps]="steps"
+                         (stepClicked)="gotoStep($event)"></cfx-stepper>
+        </div>
+    </mat-card>
+</div>
+<div class="pad-top-md">
+    <mat-card>
+        <mat-card-title>
+            <span>Range slider</span>
+        </mat-card-title>
+        <div style="display: flex; width: 50%;">
+            <cfx-range-slider [style.flex-grow]="1"
+                              [ngModel]="{ min: 22, max: 71 }"
+                              min="10"
+                              max="100"></cfx-range-slider>
+        </div>
+        <div style="display: flex; width: 50%;">
+            <cfx-range-slider [style.flex-grow]="1"
+                              disabled="true"
+                              min="10"
+                              max="100"></cfx-range-slider>
+        </div>
+    </mat-card>
+</div>
+<div class="pad-top-md">
+    <mat-card>
+        <mat-card-title>
+            <span>Range input</span>
+        </mat-card-title>
+        <div style="display: flex; width: 25%;">
+            <cfx-range-input [style.flex-grow]="1"
+                             [ngModel]="{ min: 22, max: 71 }"
+                             label="example"
+                             width="120px"
+                             min="10"
+                             max="100"></cfx-range-input>
+        </div>
+        <div class="pad-top-md" style="display: flex; width: 25%;">
+            <cfx-range-input [style.flex-grow]="1"
+                             [ngModel]="{ min: 22, max: 71 }"
+                             [disabled]="true"
+                             label="example 2"
+                             width="120px"
+                             min="10"
+                             max="100"></cfx-range-input>
+        </div>
+    </mat-card>
+</div>
+<div class="pad-top-md">
+    <mat-card>
+        <mat-card-title>
+            <span>Inline Alerts</span>
+        </mat-card-title>
+        <div class="pad-top-md">
+            <cfx-alert>
+                <div class="kitchen-sink-small-inline-alert-message-container">
+                    <div class="ellipsis"
+                         [matTooltip]="'Content in small alerts should be on one line.'">
+                        Error: Content in small alerts should be on one line.&nbsp;
+                    </div>
+                    <span class="link">More details</span>
+                </div>
+            </cfx-alert>
+        </div>
+        <div class="pad-top-md">
+            <cfx-alert type="success"
+                       title="Success">
+                <div class="ellipsis"
+                     [matTooltip]="'Content in small alerts should be on one line.'">
+                    Content in small alerts should be on one line.&nbsp;
+                </div>
+            </cfx-alert>
+        </div>
+        <div class="pad-top-md">
+            <cfx-alert type="warning"
+                       title="Warning">
+                <div class="ellipsis"
+                     [matTooltip]="'Content in small alerts should be on one line.'">
+                    Content in small alerts should be on one line.&nbsp;
+                </div>
+            </cfx-alert>
+        </div>
+        <div class="pad-top-md">
+            <cfx-alert type="info"
+                       title="Info">
+                <div class="ellipsis"
+                     [matTooltip]="'Content in small alerts should be on one line.'">
+                    Content in small alerts should be on one line.&nbsp;
+                </div>
+            </cfx-alert>
+        </div>
+        <div class="pad-top-md">
+            <cfx-alert type="unknown"
+                       title="Status unknown">
+                <div class="ellipsis"
+                     [matTooltip]="'Content in small alerts should be on one line.'">
+                    Content in small alerts should be on one line.&nbsp;
+                </div>
+            </cfx-alert>
+        </div>
+
+        <div class="pad-top-md">
+            <cfx-alert size="large"
+                       title="Large alert">
+                <span [matTooltip]="'Try to keep content in large alerts to two lines maximum.'">
+                    Try to keep content in large alerts to two lines maximum.
+                    Try to keep content in large alerts to two lines maximum.
+                    Try to keep content in large alerts to two lines maximum.
+                    Try to keep content in large alerts to two lines maximum.
+                    Try to keep content in large alerts to two lines maximum.
+                    Try to keep content in large alerts to two lines maximum.
+                </span>
+                <span class="link">More details</span>
+            </cfx-alert>
+        </div>
+
+        <div class="pad-top-md"
+             *ngIf="closeableAlertVisible">
+            <cfx-alert title="Closeable alert"
+                       closeable="true"
+                       (close)="closeableAlertVisible = false">
+                <div class="ellipsis"
+                     [matTooltip]="'Content in small alerts should be on one line.'">
+                    Content in small alerts should be on one line.&nbsp;
+                </div>
+            </cfx-alert>
+        </div>
+
+    </mat-card>
+</div>
+<div class="pad-top-md">
+    <mat-card>
+        <mat-card-title>
+            <span>Mat-Form-Field Mat-Select</span>
+        </mat-card-title>
+        <mat-form-field floatLabel="never">
+            <mat-select disableOptionCentering>
+                <mat-option>Option 1</mat-option>
+                <mat-option>Option 2</mat-option>
+                <mat-option>Option 3</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </mat-card>
+</div>
+<div class="pad-top-md">
+    <mat-card>
+        <mat-card-title>
+            <span>Autocomplete</span>
+        </mat-card-title>
+        <button class="btn btn-secondary pull-right text-uppercase"
+                (click)="modelDir.reset()">Reset</button>
+        <mat-form-field floatLabel="never"
+                        class="pad-top-md">
+            <input matInput
+                   placeholder="State"
+                   [matAutocomplete]="Auto"
+                   [(ngModel)]="currentState"
+                   #modelDir="ngModel"
+                   (ngModelChange)="filteredStates = filterStates(currentState)">
+        </mat-form-field>
+        <mat-autocomplete #Auto="matAutocomplete">
+            <mat-option *ngFor="let state of filteredStates"
+                        [value]="state.name">
+                <span>{{ state.name }}</span>
+                <span class="demo-secondary-text"> ({{state.code}}) </span>
+            </mat-option>
+        </mat-autocomplete>
+    </mat-card>
+</div>
+<div class="pad-top-md">
+    <mat-card>
+        <mat-card-title>
+            <span>Mat-tab with custom design</span>
+        </mat-card-title>
+        <mat-tab-group disableRipple>
+            <mat-tab label="First tab">
+                <p>First tab content comes here</p>
+                <p>...</p>
+            </mat-tab>
+            <mat-tab label="Second">
+                <p>Second tab content comes here</p>
+                <p>...</p>
+            </mat-tab>
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <i class="oval warn"></i>Third
+                </ng-template>
+                <p>Third tab content comes here</p>
+                <p>...</p>
+            </mat-tab>
+        </mat-tab-group>
+    </mat-card>
+</div>
+<div class="pad-top-md">
+    <mat-card>
+        <mat-card-title>
+            <span>Expansion Panel</span>
+        </mat-card-title>
+        <mat-expansion-panel hideToggle="true">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <span class="mat-text-title">Panel Title</span>
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            Expansion panel content...
+        </mat-expansion-panel>
+    </mat-card>
+</div>
+<div class="pad-top-md">
+    <mat-card>
+        <mat-card-title>
+            <span>Radio Group</span>
+        </mat-card-title>
+        <mat-radio-group class="radio-button-group">
+            <mat-radio-button [value]="1">Option 1</mat-radio-button>
+            <mat-radio-button class="pad-left-md"
+                              [value]="2">Option 2</mat-radio-button>
+        </mat-radio-group>
+    </mat-card>
+</div>
+<div class="pad-top-md">
+    <mat-card>
+        <mat-card-title>
+            <span>Progress Bar</span>
+        </mat-card-title>
+        <mat-progress-bar [mode]="'determinate'"
+                          [value]="5"></mat-progress-bar>
+    </mat-card>
+</div>
+<div class="pad-top-md">
+    <mat-card>
+        <mat-card-title>
+            <span>Slide Toggle</span>
+        </mat-card-title>
+        <div>
+            <mat-slide-toggle labelPosition="after">Text</mat-slide-toggle>
+        </div>
+        <div class="pad-top-md">
+            <mat-slide-toggle class="medium mat-pending"
+                              labelPosition="after">Text</mat-slide-toggle>
+        </div>
+    </mat-card>
+</div>
+<div class="pad-top-md">
+    <mat-card>
+        <mat-card-title>
+            <span>Checkbox</span>
+        </mat-card-title>
+        <mat-checkbox></mat-checkbox>
+    </mat-card>
+</div>
+<div class="pad-top-md">
+    <mat-card>
+        <mat-card-title>
+            <span>Buttons</span>
+        </mat-card-title>
+        <div class="push-bottom-sm">
+            <mat-card-subtitle>
+                <span>Sizes</span>
+            </mat-card-subtitle>
+            <div>
+                <button class="cfx-btn btn-lg">Default L</button>
+                <button class="cfx-btn">Default M</button>
+                <button class="cfx-btn btn-sm">Default S</button>
+            </div>
+        </div>
+        <div class="push-bottom-sm">
+            <mat-card-subtitle>
+                <span>Types</span>
+            </mat-card-subtitle>
+            <div>
+                <button class="cfx-btn">Default</button>
+                <button class="cfx-btn btn-primary">Primary</button>
+                <button class="cfx-btn btn-danger">Danger</button>
+                <button class="cfx-btn btn-borderless">Borderless</button>
+            </div>
+            <div class="push-top-sm">
+                <button class="cfx-btn"
+                        disabled>Default</button>
+                <button class="cfx-btn btn-primary"
+                        disabled>Primary</button>
+                <button class="cfx-btn btn-danger"
+                        disabled>Danger</button>
+                <button class="cfx-btn btn-borderless"
+                        disabled>Borderless</button>
+            </div>
+            <div class="push-top-sm">
+                <button class="cfx-btn btn-primary loading"
+                        disabled>
+                    <mat-icon svgIcon="cfx:spinner-sm"
+                              class="spin">
+                    </mat-icon>
+                    Primary Loading...
+                </button>
+                <button class="cfx-btn btn-danger loading"
+                        disabled>
+                    <mat-icon svgIcon="cfx:spinner-sm"
+                              class="spin">
+                    </mat-icon>
+                    Danger Loading...
+                </button>
+            </div>
+        </div>
+        <div class="push-bottom-sm">
+            <mat-card-subtitle>
+                <span>Icons</span>
+            </mat-card-subtitle>
+            <div>
+                <button class="cfx-btn btn-primary">
+                    <mat-icon svgIcon="cfx:plus-circle"></mat-icon>
+                    Add
+                </button>
+                <button class="cfx-btn btn-primary">
+                    Next
+                    <mat-icon svgIcon="cfx:next"></mat-icon>
+                </button>
+                <button class="cfx-btn btn-primary btn-sm">
+                    <mat-icon svgIcon="cfx:back"></mat-icon>
+                    Back
+                </button>
+                <button class="cfx-btn btn-primary btn-lg">
+                    Deploy
+                    <mat-icon svgIcon="cfx:cloud-migration"></mat-icon>
+                </button>
+            </div>
+        </div>
+        <div class="push-bottom-sm">
+            <mat-card-subtitle>
+                <span>Dropdown with mat menu</span>
+            </mat-card-subtitle>
+            <div>
+                <button class="cfx-btn btn-dropdown"
+                        [matMenuTriggerFor]="actionsMenu">
+                    Actions
+                    <mat-icon class="caret"
+                              svgIcon="cfx:dropdown"></mat-icon>
+                </button>
+                <mat-menu #actionsMenu="matMenu">
+                    <button mat-menu-item
+                            disableRipple>
+                        <mat-icon svgIcon="cfx:placeholder-fpo"></mat-icon>
+                        View in NiFi
+                    </button>
+                    <button mat-menu-item
+                            disableRipple>
+                        <mat-icon svgIcon="cfx:stop"></mat-icon>
+                        Stop
+                    </button>
+                    <button mat-menu-item
+                            disableRipple>
+                        <mat-icon svgIcon="cfx:delete"></mat-icon>
+                        Terminate
+                    </button>
+                </mat-menu>
+            </div>
+        </div>
+    </mat-card>
+</div>
+<div class="pad-top-md">
+    <mat-card>
+        <mat-card-title>
+            <span>File picker</span>
+        </mat-card-title>
+        <div class="push-bottom-sm">
+            <mat-card-subtitle>
+                <span>File picker with only output event (does not show uploaded files), accepts json file</span>
+            </mat-card-subtitle>
+            <div fxLayout>
+                <cfx-file-picker extensions="application/json"
+                                 [displayUploadedFiles]="false"
+                                 fxFlex="1 0 1"
+                                 (onFileChanged)="inlineFileSelectChanged($event)">
+                </cfx-file-picker>
+                <textarea fxFlex="9 0 9"
+                          class="push-left-sm"
+                          style="height: 79px;"
+                          #fileNamesTextarea></textarea>
+            </div>
+        </div>
+        <div class="push-bottom-sm">
+            <mat-card-subtitle>
+                <span>Multiple file picker, accepts json files</span>
+            </mat-card-subtitle>
+            <div>
+                <cfx-file-picker extensions="application/json"
+                                 [type]="'FILES'"></cfx-file-picker>
+            </div>
+        </div>
+        <div class="push-bottom-sm">
+            <mat-card-subtitle>
+                <span>File picker, accepts json file</span>
+            </mat-card-subtitle>
+            <div>
+                <cfx-file-picker extensions="application/json"></cfx-file-picker>
+            </div>
+        </div>
+    </mat-card>
+</div>
+<div class="pad-top-md">
+    <mat-card>
+        <mat-card-title>
+            <span>Filter select</span>
+        </mat-card-title>
+        <cfx-filter-select [options]="[{title:'a', value:'a'}, {title:'b', value:'b'}, {title:'c', value:'c'}]"
+                           filterTitle="Numbers"></cfx-filter-select>
+    </mat-card>
+</div>
+<div class="pad-top-md">
+    <mat-card>
+        <mat-card-title>
+            Inputs
+        </mat-card-title>
+        <div style="width: 250px;">
+            <div class="cfx-input-wrapper push-bottom-sm">
+                <mat-icon class="input-prefix"
+                          svgIcon="cfx:filter"></mat-icon>
+                <input type="text"
+                       placeholder="Search" />
+                <mat-icon class="input-suffix color-link"
+                          svgIcon="cfx:close">
+                </mat-icon>
+            </div>
+            <div class="cfx-input-wrapper">
+                <span class="input-prefix">+1&nbsp;</span>
+                <input type="text"
+                       placeholder="Phone" />
+                <mat-icon class="input-suffix"
+                          svgIcon="cfx:groups">
+                </mat-icon>
+            </div>
+            <div class="cfx-input-wrapper pad-top-lg">
+                <label>Input with label</label>
+                <input type="text"
+                       placeholder="Enter text ...">
+            </div>
+            <div class="cfx-input-wrapper pad-top-lg">
+                <label>Textarea with label</label>
+                <textarea placeholder="Enter text ..."></textarea>
+            </div>
+        </div>
+    </mat-card>
+</div>
+<div class="pad-top-md">
+    <mat-card>
+        <mat-card-title>
+            <span>Confirmation Dialog</span>
+        </mat-card-title>
+        <button class="cfx-btn"
+                (click)="openConfirmationDialog()">Open</button>
+    </mat-card>
+</div>
+<div class="pad-top-md">
+    <mat-card>
+        <mat-card-title>
+            <span>Large tooltips</span>
+        </mat-card-title>
+        <h4 class="push-top-md cfx-muted">Tooltip help with text only:
+            <cfx-tooltip-help-button [text]="loremIpsum"></cfx-tooltip-help-button>
+        </h4>
+        <h4 class="push-top-md cfx-muted">Tooltip help with title, text & link:
+            <cfx-tooltip-help-button title="More info"
+                                     [text]="loremIpsum"
+                                     link="http://cloudera.com"></cfx-tooltip-help-button>
+        </h4>
+
+        <h4 class="push-top-md cfx-muted">
+            <a href="#"
+               [cfxTooltip]="loremIpsum">
+                Large tooltip with text only
+            </a>
+        </h4>
+
+        <h4 class="push-top-md cfx-muted">
+            <a href="#"
+               [cfxTooltip]="tooltipTemplate">
+                Large tooltip with rich custom content
+            </a>
+        </h4>
+
+        <ng-template #tooltipTemplate>
+            <div class="pad-sm">
+                <h5 class="push-sm">More info</h5>
+                <div class="cfx-body-small-400 push-sm">{{loremIpsum}}</div>
+            </div>
+        </ng-template>
+    </mat-card>
+</div>
+<div class="pad-top-md">
+    <mat-card>
+        <mat-card-title>
+            <span>Info cards</span>
+        </mat-card-title>
+            <div>
+                <cfx-info-card label="Info card label"
+                               value="Single line string value">
+                </cfx-info-card>
+            </div>
+        <div class="info-cards">
+            <div>
+                <cfx-info-card label="Info card label"
+                               value="Value with icon"
+                               icon="status-success">
+                </cfx-info-card>
+            </div>
+            <div>
+                <cfx-info-card label="Long label which is really extra long to be a label"
+                               value="A long Single line string value which is really extra long">
+                </cfx-info-card>
+            </div>
+
+            <div>
+                <cfx-info-card label="Info card label"
+                               value="With custom icon class"
+                               icon="status-in-progress"
+                               iconClass="spin">
+                </cfx-info-card>
+            </div>
+            <div>
+                <cfx-info-card label="Info card label">
+                    A <span class="cfx-link">formatted</span> value
+                </cfx-info-card>
+            </div>
+
+            <div>
+                <cfx-info-card label="Info card label"
+                               value="Aligned with the card with icon above"
+                               icon="">
+                </cfx-info-card>
+            </div>
+            <div>
+                <cfx-info-card label="Info card label">
+                    A long multiline content. A long multiline content. A long multiline content.
+                </cfx-info-card>
+            </div>
+        </div>
+    </mat-card>
+</div>

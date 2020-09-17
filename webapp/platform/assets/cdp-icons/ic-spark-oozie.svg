@@ -1,0 +1,30 @@
+<!--
+  ~  (c) 2018-2020 Cloudera, Inc. All rights reserved.
+  ~
+  ~    This code is provided to you pursuant to your written agreement with Cloudera, which may be the terms of the
+  ~   Affero General Public License version 3 (AGPLv3), or pursuant to a written agreement with a third party authorized
+  ~   to distribute this code.  If you do not have a written agreement with Cloudera or with an authorized and
+  ~   properly licensed third party, you do not have any rights to this code.
+  ~
+  ~    If this code is provided to you under the terms of the AGPLv3:
+  ~    (A) CLOUDERA PROVIDES THIS CODE TO YOU WITHOUT WARRANTIES OF ANY KIND;
+  ~    (B) CLOUDERA DISCLAIMS ANY AND ALL EXPRESS AND IMPLIED WARRANTIES WITH RESPECT TO THIS CODE, INCLUDING BUT NOT
+  ~        LIMITED TO IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE;
+  ~    (C) CLOUDERA IS NOT LIABLE TO YOU, AND WILL NOT DEFEND, INDEMNIFY, OR HOLD YOU HARMLESS FOR ANY CLAIMS ARISING
+  ~        FROM OR RELATED TO THE CODE; AND
+  ~    (D) WITH RESPECT TO YOUR EXERCISE OF ANY RIGHTS GRANTED TO YOU FOR THE CODE, CLOUDERA IS NOT LIABLE FOR ANY
+  ~        DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES INCLUDING, BUT NOT LIMITED
+  ~        TO, DAMAGES RELATED TO LOST REVENUE, LOST PROFITS, LOSS OF INCOME, LOSS OF BUSINESS ADVANTAGE OR
+  ~        UNAVAILABILITY, OR LOSS OR CORRUPTION OF DATA.
+  ~
+  -->
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+  <g fill="none" fill-rule="evenodd">
+    <g transform="translate(1 7.114)">
+      <path d="M7.474 14.09c-3.867 0-7.016-3.044-7.016-6.817 0-3.774 3.15-6.818 7.016-6.818 3.868 0 7.016 3.044 7.016 6.818 0 3.773-3.148 6.818-7.016 6.818z" fill="#0050A2" fill-rule="nonzero"/>
+      <path d="M7.474 12.727c3.116 0 5.641-2.442 5.641-5.454 0-3.013-2.525-5.455-5.64-5.455-3.116 0-5.642 2.442-5.642 5.455 0 3.012 2.526 5.454 5.641 5.454z" fill="#FFF300" fill-rule="nonzero"/>
+      <ellipse fill="#0050A2" cx="7.474" cy="7.273" rx="2.115" ry="2.045"/>
+    </g>
+    <path d="M7.302 12.322l1.764 1.227c.467.324.58.962.253 1.424-.327.463-.97.575-1.437.25l-3.396-2.361a1.02 1.02 0 01.245-1.8l4.975-1.765 1.277-5.7c.195-.867 1.334-1.094 1.85-.368l3.096 4.353 4.934-1.508c.92-.282 1.693.73 1.17 1.533l-2.912 4.462 2.695 4.895c.428.778-.275 1.69-1.143 1.485l-4.155-.98a1.022 1.022 0 01-.764-1.232c.131-.549.687-.888 1.242-.758l1.9.449-1.879-3.413c-.181-.33-.166-.73.04-1.046l1.703-2.612-2.938.899c-.427.13-.89-.026-1.147-.388l-2.184-3.07-.895 3.994a1.026 1.026 0 01-.659.74l-3.635 1.29z" fill="#FF6500" fill-rule="nonzero"/>
+  </g>
+</svg>

@@ -1,0 +1,129 @@
+/*
+ *  (c) 2018-2020 Cloudera, Inc. All rights reserved.
+ *
+ *    This code is provided to you pursuant to your written agreement with Cloudera, which may be the terms of the
+ *   Affero General Public License version 3 (AGPLv3), or pursuant to a written agreement with a third party authorized
+ *   to distribute this code.  If you do not have a written agreement with Cloudera or with an authorized and
+ *   properly licensed third party, you do not have any rights to this code.
+ *
+ *    If this code is provided to you under the terms of the AGPLv3:
+ *    (A) CLOUDERA PROVIDES THIS CODE TO YOU WITHOUT WARRANTIES OF ANY KIND;
+ *    (B) CLOUDERA DISCLAIMS ANY AND ALL EXPRESS AND IMPLIED WARRANTIES WITH RESPECT TO THIS CODE, INCLUDING BUT NOT
+ *        LIMITED TO IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE;
+ *    (C) CLOUDERA IS NOT LIABLE TO YOU, AND WILL NOT DEFEND, INDEMNIFY, OR HOLD YOU HARMLESS FOR ANY CLAIMS ARISING
+ *        FROM OR RELATED TO THE CODE; AND
+ *    (D) WITH RESPECT TO YOUR EXERCISE OF ANY RIGHTS GRANTED TO YOU FOR THE CODE, CLOUDERA IS NOT LIABLE FOR ANY
+ *        DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES INCLUDING, BUT NOT LIMITED
+ *        TO, DAMAGES RELATED TO LOST REVENUE, LOST PROFITS, LOSS OF INCOME, LOSS OF BUSINESS ADVANTAGE OR
+ *        UNAVAILABILITY, OR LOSS OR CORRUPTION OF DATA.
+ *
+ */
+
+:root {
+    --primary: #006ee3;
+    --on-primary: #fff;
+    --secondary: #0058bd;
+    --on-secondary: #fff;
+    --background: #f8f8f8;
+    --on-background: #666;
+    --blue-40: #eefaff;
+    --blue-50: #e6f7ff;
+    --blue-100: #a3dfff;
+    --blue-200: #7accff;
+    --blue-300: #51b5fc;
+    --blue-400: #008cff;
+    --blue-500: #006ee3;
+    --blue-600: #0058bd;
+    --blue-700: #004496;
+    --blue-800: #002f70;
+    --blue-900: #001c4a;
+    --gray-40: #fafbfc;
+    --gray-50: #f4f5f6;
+    --gray-100: #f1f2f3;
+    --gray-200: #eaebec;
+    --gray-300: #d6d8db;
+    --gray-400: #adb2b6;
+    --gray-500: #989ea4;
+    --gray-600: #838b92;
+    --gray-700: #5a656d;
+    --gray-800: #333e47;
+    --gray-900: #1b2329;
+    --black: #000;
+    --black-10: rgba(0, 0, 0, 0.1);
+    --black-25: rgba(0, 0, 0, 0.25);
+    --white: #fff;
+    --green-50: #f2ffeb;
+    --green-100: #cbf1b5;
+    --green-200: #aee390;
+    --green-300: #82c25d;
+    --green-400: #5aa232;
+    --green-500: #3a870e;
+    --green-600: #2c6c08;
+    --green-700: #1a4700;
+    --green-800: #163c00;
+    --green-900: #133300;
+    --orange-50: #fff0d9;
+    --orange-100: #ffd599;
+    --orange-200: #ffa319;
+    --orange-300: #ff8400;
+    --orange-400: #f96600;
+    --orange-500: #b34d00;
+    --orange-600: #8c3800;
+    --orange-700: #662500;
+    --orange-800: #401500;
+    --orange-900: #260d00;
+    --red-50: #fff2f2;
+    --red-100: #fdcfcf;
+    --red-200: #faadac;
+    --red-300: #f36d6b;
+    --red-400: #e83934;
+    --red-500: #d9150c;
+    --red-600: #bf1408;
+    --red-700: #990d00;
+    --red-800: #670901;
+    --red-900: #3f0600;
+    --yellow-50: #fffaed;
+    --yellow-100: #fff1cc;
+    --yellow-200: #ffd664;
+    --yellow-300: #fdc926;
+    --yellow-400: #d99f18;
+    --yellow-500: #a16908;
+    --yellow-600: #804a00;
+    --yellow-700: #663a00;
+    --yellow-800: #4d2b00;
+    --yellow-900: #331d00;
+    --purple-50: #f4f1fa;
+    --purple-100: #d5c9ed;
+    --purple-200: #ab93dc;
+    --purple-300: #9678d3;
+    --purple-400: #8263c2;
+    --purple-500: #6f47bf;
+    --purple-600: #552da6;
+    --purple-700: #4a1ca6;
+    --purple-800: #33058d;
+    --purple-900: #1e005a;
+    --mint-200: #2bd2d4;
+    --mint-300: #11bec0;
+    --mint-400: #00a3af;
+    --mint-500: #048080;
+    --slate-400: #4b8aa3;
+    --slate-500: #305868;
+    --mintish: #1fcfb8;
+    --slate: #305868;
+    --oozie-blue: #0050a2;
+    --oozie-yellow: #fff300;
+    --default-box-border-radius: 3px;
+    --default-tab-menu-item-color: #0070bd;
+    --pad-xs: 4px;
+    --pad-sm: 8px;
+    --pad-md: 16px;
+    --pad-lg: 24px;
+    --pad-xl: 36px;
+    --pad-xxl: 56px;
+    --margin-xs: 4px;
+    --margin-sm: 8px;
+    --margin-md: 16px;
+    --margin-lg: 24px;
+    --margin-xl: 36px;
+    --margin-xxl: 56px;
+}

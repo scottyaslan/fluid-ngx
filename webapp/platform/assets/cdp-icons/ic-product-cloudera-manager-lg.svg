@@ -1,0 +1,32 @@
+<!--
+  ~  (c) 2018-2020 Cloudera, Inc. All rights reserved.
+  ~
+  ~    This code is provided to you pursuant to your written agreement with Cloudera, which may be the terms of the
+  ~   Affero General Public License version 3 (AGPLv3), or pursuant to a written agreement with a third party authorized
+  ~   to distribute this code.  If you do not have a written agreement with Cloudera or with an authorized and
+  ~   properly licensed third party, you do not have any rights to this code.
+  ~
+  ~    If this code is provided to you under the terms of the AGPLv3:
+  ~    (A) CLOUDERA PROVIDES THIS CODE TO YOU WITHOUT WARRANTIES OF ANY KIND;
+  ~    (B) CLOUDERA DISCLAIMS ANY AND ALL EXPRESS AND IMPLIED WARRANTIES WITH RESPECT TO THIS CODE, INCLUDING BUT NOT
+  ~        LIMITED TO IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE;
+  ~    (C) CLOUDERA IS NOT LIABLE TO YOU, AND WILL NOT DEFEND, INDEMNIFY, OR HOLD YOU HARMLESS FOR ANY CLAIMS ARISING
+  ~        FROM OR RELATED TO THE CODE; AND
+  ~    (D) WITH RESPECT TO YOUR EXERCISE OF ANY RIGHTS GRANTED TO YOU FOR THE CODE, CLOUDERA IS NOT LIABLE FOR ANY
+  ~        DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES INCLUDING, BUT NOT LIMITED
+  ~        TO, DAMAGES RELATED TO LOST REVENUE, LOST PROFITS, LOSS OF INCOME, LOSS OF BUSINESS ADVANTAGE OR
+  ~        UNAVAILABILITY, OR LOSS OR CORRUPTION OF DATA.
+  ~
+  -->
+<svg viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+  <defs>
+    <linearGradient x1="26.347%" y1="30.729%" x2="100%" y2="100%" id="ic-product-cloudera-manager-lg_svg__a">
+      <stop stop-color="#00B7E0" offset="0%"/>
+      <stop stop-color="#005380" offset="100%"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="url(#ic-product-cloudera-manager-lg_svg__a)" d="M20 20v152h100.645L172 120.645V20z"/>
+    <path d="M57.752 37c3.658 0 6.906.72 9.745 2.16 2.838 1.44 5.066 3.483 6.686 6.129 1.618 2.646 2.47 5.727 2.554 9.24h-9.713c-.086-3.048-.979-5.407-2.681-7.081-1.703-1.672-4.048-2.509-7.034-2.509-3.995 0-6.748 1.397-8.262 4.192-1.514 2.795-2.27 6.564-2.27 11.305 0 3.176.293 5.897.883 8.162.588 2.266 1.66 4.065 3.216 5.399 1.555 1.333 3.722 2 6.496 2 3.154 0 5.54-.794 7.16-2.381 1.618-1.588 2.512-3.884 2.68-6.892h9.714c-.041 3.473-.904 6.51-2.586 9.115-1.682 2.604-3.963 4.615-6.843 6.033C64.616 83.29 61.387 84 57.815 84c-4.794 0-8.736-1.038-11.827-3.112-3.09-2.074-5.361-4.88-6.813-8.416C37.725 68.938 37 64.946 37 60.5s.714-8.436 2.145-11.972c1.429-3.535 3.69-6.34 6.78-8.416C49.015 38.038 52.958 37 57.752 37zm36.241 1.08l12.11 29.788 12.174-29.788H129v44.84h-8.704V52.815L108.122 82.92h-4.163L91.786 52.815V82.92h-8.704V38.08h10.911z" fill="#FFF"/>
+  </g>
+</svg>

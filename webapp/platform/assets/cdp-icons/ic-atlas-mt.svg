@@ -1,0 +1,23 @@
+<!--
+  ~  (c) 2018-2020 Cloudera, Inc. All rights reserved.
+  ~
+  ~    This code is provided to you pursuant to your written agreement with Cloudera, which may be the terms of the
+  ~   Affero General Public License version 3 (AGPLv3), or pursuant to a written agreement with a third party authorized
+  ~   to distribute this code.  If you do not have a written agreement with Cloudera or with an authorized and
+  ~   properly licensed third party, you do not have any rights to this code.
+  ~
+  ~    If this code is provided to you under the terms of the AGPLv3:
+  ~    (A) CLOUDERA PROVIDES THIS CODE TO YOU WITHOUT WARRANTIES OF ANY KIND;
+  ~    (B) CLOUDERA DISCLAIMS ANY AND ALL EXPRESS AND IMPLIED WARRANTIES WITH RESPECT TO THIS CODE, INCLUDING BUT NOT
+  ~        LIMITED TO IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE;
+  ~    (C) CLOUDERA IS NOT LIABLE TO YOU, AND WILL NOT DEFEND, INDEMNIFY, OR HOLD YOU HARMLESS FOR ANY CLAIMS ARISING
+  ~        FROM OR RELATED TO THE CODE; AND
+  ~    (D) WITH RESPECT TO YOUR EXERCISE OF ANY RIGHTS GRANTED TO YOU FOR THE CODE, CLOUDERA IS NOT LIABLE FOR ANY
+  ~        DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES INCLUDING, BUT NOT LIMITED
+  ~        TO, DAMAGES RELATED TO LOST REVENUE, LOST PROFITS, LOSS OF INCOME, LOSS OF BUSINESS ADVANTAGE OR
+  ~        UNAVAILABILITY, OR LOSS OR CORRUPTION OF DATA.
+  ~
+  -->
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+  <path d="M11.986 1.5l8.986 5.67v9.49l-8.986 5.67L3 16.66V7.17l8.986-5.67zm0 2.745L5.368 8.42v6.988l6.618 4.177 6.618-4.177V8.421l-6.618-4.176zm-1.94 3.574a3.105 3.105 0 013.105 3.104l-.002-.029 1.658-.019a.878.878 0 11.086.5l-1.779.02a2.992 2.992 0 01-.728 1.534l.143.144h.382l2.388 2.39-.717.716-2.388-2.388v-.383l-.143-.143a2.992 2.992 0 01-1.651.743l.114 1.054a.808.808 0 11-.496.076l-.12-1.113a3.105 3.105 0 01.148-6.206zm.338 7.732a.308.308 0 100 .615.308.308 0 000-.615zm1.758-4.145l-.961.012a1.252 1.252 0 01-.962.929l.078.712a2.142 2.142 0 001.845-1.653zm-2.097-2.632a2.15 2.15 0 00-.253 4.284l-.076-.71a1.25 1.25 0 111.483-1.431l.995-.012a2.15 2.15 0 00-2.15-2.13zm-.08 1.598a.75.75 0 100 1.5.75.75 0 000-1.5zm5.713.233a.377.377 0 100 .754.377.377 0 000-.754z" fill="currentColor" fill-rule="evenodd"/>
+</svg>

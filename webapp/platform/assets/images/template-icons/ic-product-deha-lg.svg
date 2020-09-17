@@ -1,0 +1,35 @@
+<!--
+  (c) 2018-2020 Cloudera, Inc. All rights reserved.
+
+  This code is provided to you pursuant to your written agreement with Cloudera, which may be the terms of the
+  Affero General Public License version 3 (AGPLv3), or pursuant to a written agreement with a third party authorized
+  to distribute this code.  If you do not have a written agreement with Cloudera or with an authorized and
+  properly licensed third party, you do not have any rights to this code.
+
+  If this code is provided to you under the terms of the AGPLv3:
+   (A) CLOUDERA PROVIDES THIS CODE TO YOU WITHOUT WARRANTIES OF ANY KIND;
+   (B) CLOUDERA DISCLAIMS ANY AND ALL EXPRESS AND IMPLIED WARRANTIES WITH RESPECT TO THIS CODE, INCLUDING BUT NOT
+       LIMITED TO IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE;
+   (C) CLOUDERA IS NOT LIABLE TO YOU, AND WILL NOT DEFEND, INDEMNIFY, OR HOLD YOU HARMLESS FOR ANY CLAIMS ARISING
+       FROM OR RELATED TO THE CODE; AND
+   (D) WITH RESPECT TO YOUR EXERCISE OF ANY RIGHTS GRANTED TO YOU FOR THE CODE, CLOUDERA IS NOT LIABLE FOR ANY
+       DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES INCLUDING, BUT NOT LIMITED
+       TO, DAMAGES RELATED TO LOST REVENUE, LOST PROFITS, LOSS OF INCOME, LOSS OF BUSINESS ADVANTAGE OR
+       UNAVAILABILITY, OR LOSS OR CORRUPTION OF DATA.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192">
+    <defs>
+        <linearGradient id="a" x1="26.347%" y1="30.729%" y2="100%">
+            <stop offset="0%" stop-color="#196AED"/>
+            <stop offset="100%" stop-color="#270E82"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="url(#a)" d="M154.63 77.664a65.22 65.22 0 0 0-13.318-1.366c-35.866 0-64.942 29.075-64.942 64.942 0 4.59.477 9.069 1.382 13.39H0V0h154.63v77.664z" transform="translate(1 1)"/>
+        <path fill="#FFF" d="M62.834 19.311h27.689v7.782H72.3V37.92h18.03v7.781H72.3V57.31h18.223v7.781H62.834V19.311zM33.62 57.31c3.306 0 5.892-.637 7.76-1.913 1.867-1.275 3.156-3.004 3.864-5.187.707-2.183 1.062-4.852 1.062-8.008 0-3.155-.365-5.836-1.095-8.04-.73-2.205-2.028-3.934-3.895-5.188-1.868-1.253-4.433-1.88-7.696-1.88h-5.858v30.216h5.858zM18.294 19.311h16.87c7.384 0 12.751 2.075 16.099 6.225 3.348 4.15 5.022 9.706 5.022 16.665 0 7.046-1.684 12.623-5.054 16.729-3.371 4.107-8.725 6.16-16.066 6.16h-16.87V19.311z"/>
+        <g fill-rule="nonzero">
+            <path fill="#2135B0" d="M142.312 191.486c-27.198 0-49.246-22.048-49.246-49.246 0-27.198 22.048-49.247 49.246-49.247 27.198 0 49.247 22.049 49.247 49.247s-22.049 49.246-49.247 49.246z"/>
+            <path fill="#FFF" d="M113.602 124.002h7.194v14.045h13.066v-14.045h7.194v34.55h-7.194v-14.485h-13.066v14.485h-7.194v-34.55zm55.46 27.307h-13.457l-2.203 7.243h-7.438l10.962-34.55h10.766l10.962 34.55h-7.39l-2.201-7.243zm-1.663-5.53l-5.04-16.492h-.099l-4.991 16.492h10.13z"/>
+        </g>
+    </g>
+</svg>

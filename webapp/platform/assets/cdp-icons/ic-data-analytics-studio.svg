@@ -1,0 +1,30 @@
+<!--
+  ~  (c) 2018-2020 Cloudera, Inc. All rights reserved.
+  ~
+  ~    This code is provided to you pursuant to your written agreement with Cloudera, which may be the terms of the
+  ~   Affero General Public License version 3 (AGPLv3), or pursuant to a written agreement with a third party authorized
+  ~   to distribute this code.  If you do not have a written agreement with Cloudera or with an authorized and
+  ~   properly licensed third party, you do not have any rights to this code.
+  ~
+  ~    If this code is provided to you under the terms of the AGPLv3:
+  ~    (A) CLOUDERA PROVIDES THIS CODE TO YOU WITHOUT WARRANTIES OF ANY KIND;
+  ~    (B) CLOUDERA DISCLAIMS ANY AND ALL EXPRESS AND IMPLIED WARRANTIES WITH RESPECT TO THIS CODE, INCLUDING BUT NOT
+  ~        LIMITED TO IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE;
+  ~    (C) CLOUDERA IS NOT LIABLE TO YOU, AND WILL NOT DEFEND, INDEMNIFY, OR HOLD YOU HARMLESS FOR ANY CLAIMS ARISING
+  ~        FROM OR RELATED TO THE CODE; AND
+  ~    (D) WITH RESPECT TO YOUR EXERCISE OF ANY RIGHTS GRANTED TO YOU FOR THE CODE, CLOUDERA IS NOT LIABLE FOR ANY
+  ~        DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES INCLUDING, BUT NOT LIMITED
+  ~        TO, DAMAGES RELATED TO LOST REVENUE, LOST PROFITS, LOSS OF INCOME, LOSS OF BUSINESS ADVANTAGE OR
+  ~        UNAVAILABILITY, OR LOSS OR CORRUPTION OF DATA.
+  ~
+  -->
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+  <g fill="none" fill-rule="evenodd">
+    <path d="M20.888 11.977v3.829c0 .77-.28 1.377-.858 1.818-.091.07-.19.136-.296.197-2.21 1.275-4.417 2.552-6.624 3.832-.777.45-1.541.438-2.317-.013-2.18-1.267-4.358-2.535-6.548-3.785a2.988 2.988 0 01-.258-.166c-.641-.458-.95-1.091-.95-1.91-.004-2.523-.005-5.045 0-7.568 0-.922.395-1.608 1.212-2.074 2.177-1.242 4.344-2.5 6.508-3.764.807-.471 1.588-.48 2.397-.008 2.177 1.27 4.36 2.532 6.546 3.787.814.467 1.194 1.158 1.19 2.085-.006 1.247-.002 2.494-.002 3.74" fill="#FFF"/>
+    <path d="M10.936 2.244L8.342 3.742v3.863l3.465-.93.154-.042V2c-.371 0-.743.081-1.025.244" fill="#E17000"/>
+    <path fill="#3FAE2A" d="M12.05 6.61l-.089-.025v.048z"/>
+    <path d="M8.342 8.226l-.6.16V4.089L4.025 6.234C3.461 6.56 3 7.36 3 8.01V15.99c0 .651.461 1.45 1.025 1.776l3.717 2.146.6.346 2.318 1.339.276.159c.282.163.654.244 1.025.244V7.254l-3.619.972z" fill="#418FB2"/>
+    <path d="M19.22 15.453l-.6.165V12.3h-3.134V8.181l-3.438-.95-.087-.024V22c.372 0 .744-.081 1.026-.244l2.5-1.443.6-.347 2.532-1.462.6-.347.679-.391c.564-.326 1.025-1.125 1.025-1.776v-1.008l-1.704.47z" fill="#3DB5E6"/>
+    <path d="M20.9 7.754c-.097-.592-.51-1.236-1.002-1.52l-.679-.391-.6-.347-2.533-1.462-.6-.347-2.5-1.443C12.706 2.081 12.334 2 11.962 2v4.585l.09.024.252.07 3.183.88.6.165 2.533.7.6.166 1.704.47V8.01c0-.083-.008-.17-.022-.256M19.22 14.83l1.703-.47V12.3h-1.704zM18.62 9.047l-2.534-.7V11.7h4.837V9.683l-1.704-.47z" fill="#FFC61E"/>
+  </g>
+</svg>

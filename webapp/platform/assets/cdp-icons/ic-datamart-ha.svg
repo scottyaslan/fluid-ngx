@@ -1,0 +1,31 @@
+<!--
+  ~  (c) 2018-2020 Cloudera, Inc. All rights reserved.
+  ~
+  ~    This code is provided to you pursuant to your written agreement with Cloudera, which may be the terms of the
+  ~   Affero General Public License version 3 (AGPLv3), or pursuant to a written agreement with a third party authorized
+  ~   to distribute this code.  If you do not have a written agreement with Cloudera or with an authorized and
+  ~   properly licensed third party, you do not have any rights to this code.
+  ~
+  ~    If this code is provided to you under the terms of the AGPLv3:
+  ~    (A) CLOUDERA PROVIDES THIS CODE TO YOU WITHOUT WARRANTIES OF ANY KIND;
+  ~    (B) CLOUDERA DISCLAIMS ANY AND ALL EXPRESS AND IMPLIED WARRANTIES WITH RESPECT TO THIS CODE, INCLUDING BUT NOT
+  ~        LIMITED TO IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE;
+  ~    (C) CLOUDERA IS NOT LIABLE TO YOU, AND WILL NOT DEFEND, INDEMNIFY, OR HOLD YOU HARMLESS FOR ANY CLAIMS ARISING
+  ~        FROM OR RELATED TO THE CODE; AND
+  ~    (D) WITH RESPECT TO YOUR EXERCISE OF ANY RIGHTS GRANTED TO YOU FOR THE CODE, CLOUDERA IS NOT LIABLE FOR ANY
+  ~        DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES INCLUDING, BUT NOT LIMITED
+  ~        TO, DAMAGES RELATED TO LOST REVENUE, LOST PROFITS, LOSS OF INCOME, LOSS OF BUSINESS ADVANTAGE OR
+  ~        UNAVAILABILITY, OR LOSS OR CORRUPTION OF DATA.
+  ~
+  -->
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+  <g transform="translate(2 2)" fill="none" fill-rule="evenodd">
+    <circle fill="#ECE2FE" cx="10" cy="10" r="10"/>
+    <path d="M10.167 14.667c0 .17.007.339.023.505H8.905v.737h1.403c.043.19.096.374.159.554H6.963v-.554h1.342v-.737H6.963v-.554h3.204v.049zm5.685-.05v.555H14.51v.737h1.342v.554h-4.494a4.631 4.631 0 01-.253-.809v-.482h-.078a4.72 4.72 0 01-.027-.505l.001-.05h4.85zm-1.942.555h-2.2v.737h2.2v-.737zm1.231-7.598v1.617c-.226.022-.45.057-.667.105V8.19h-.942v1.205h-.85V8.19h-.941v2.41h.224a5.529 5.529 0 00-.892 1.042v-.426h-.941v1.205h-.849v-1.205h-.942v2.41h1.924a5.501 5.501 0 00-.082.615h-2.51V10.6h3.4V7.574h4.068zm0 2.455v4.212H11.02c.07-.768.325-1.483.722-2.098v1.482h2.733v-2.41h-.942v1.205h-.85v-1.205l-.155-.001a4.68 4.68 0 01.852-.616l1.095.002v-.446c.217-.057.44-.1.667-.125z" fill="#9678D3"/>
+    <path d="M9.926 3.5v5.926H4V3.5h5.926zM8.815 4.611H7.703v1.111h-1.48l-.001-1.111h-1.11v3.704h3.703V4.61z" fill="#6F47BF"/>
+    <g transform="translate(11 10)">
+      <circle fill="#6F47BF" cx="4.667" cy="4.667" r="4.667"/>
+      <path d="M2.32 3.176h.588v1.148h1.068V3.176h.588V6h-.588V4.816H2.908V6H2.32V3.176zm4.533 2.232h-1.1L5.573 6h-.608l.896-2.824h.88L7.637 6h-.604l-.18-.592zm-.136-.452l-.412-1.348h-.008L5.89 4.956h.828z" fill="#FFF" fill-rule="nonzero"/>
+    </g>
+  </g>
+</svg>

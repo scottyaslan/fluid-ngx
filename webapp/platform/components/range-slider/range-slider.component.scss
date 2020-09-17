@@ -1,0 +1,153 @@
+/*
+ * (c) 2018-2020 Cloudera, Inc. All rights reserved.
+ *
+ *  This code is provided to you pursuant to your written agreement with Cloudera, which may be the terms of the
+ *  Affero General Public License version 3 (AGPLv3), or pursuant to a written agreement with a third party authorized
+ *  to distribute this code.  If you do not have a written agreement with Cloudera or with an authorized and
+ *  properly licensed third party, you do not have any rights to this code.
+ *
+ *  If this code is provided to you under the terms of the AGPLv3:
+ *   (A) CLOUDERA PROVIDES THIS CODE TO YOU WITHOUT WARRANTIES OF ANY KIND;
+ *   (B) CLOUDERA DISCLAIMS ANY AND ALL EXPRESS AND IMPLIED WARRANTIES WITH RESPECT TO THIS CODE, INCLUDING BUT NOT
+ *       LIMITED TO IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE;
+ *   (C) CLOUDERA IS NOT LIABLE TO YOU, AND WILL NOT DEFEND, INDEMNIFY, OR HOLD YOU HARMLESS FOR ANY CLAIMS ARISING
+ *       FROM OR RELATED TO THE CODE; AND
+ *   (D) WITH RESPECT TO YOUR EXERCISE OF ANY RIGHTS GRANTED TO YOU FOR THE CODE, CLOUDERA IS NOT LIABLE FOR ANY
+ *       DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES INCLUDING, BUT NOT LIMITED
+ *       TO, DAMAGES RELATED TO LOST REVENUE, LOST PROFITS, LOSS OF INCOME, LOSS OF BUSINESS ADVANTAGE OR
+ *       UNAVAILABILITY, OR LOSS OR CORRUPTION OF DATA.
+ */
+
+.cfx-range-slider-container {
+    display: block;
+    position: relative;
+
+    .cfx-range-slider {
+        &.cfx-range-min-slider.mat-slider {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+
+            .mat-slider-wrapper {
+                .mat-slider-ticks-container,
+                .mat-slider-track-wrapper {
+                    display: none !important;
+                }
+
+                .mat-slider-thumb-container {
+                    z-index: 3;
+
+                    .mat-slider-thumb {
+                        background: var(--white);
+                        border-color: var(--blue-500);
+                        bottom: -11px;
+                    }
+
+                    .mat-slider-thumb-label-text {
+                        color: var(--white);
+                    }
+                }
+            }
+        }
+
+        &.cfx-range-max-slider.mat-slider {
+            display: block;
+            top: 0;
+            left: 0;
+            right: 0;
+
+            .mat-slider-wrapper {
+                .mat-slider-track-wrapper {
+                    height: 4px;
+
+                    .mat-slider-track-fill {
+                        transform: none !important;
+                        z-index: 2;
+
+                        /* in order for the filltrack not to disappear */
+                        display: block !important;
+
+                        // cfx custom style
+                        height: 4px;
+                        border-radius: 2px;
+                    }
+
+                    .mat-slider-track-background {
+                        transform: none !important;
+                        z-index: 1;
+
+                        // cfx custom style
+                        height: 4px;
+                        border-radius: 2px;
+                        background: rgba($color: #000, $alpha: 0.1);
+                    }
+                }
+
+                .mat-slider-thumb-container {
+                    z-index: 3;
+
+                    .mat-slider-thumb {
+                        background: var(--white);
+                        border-color: var(--blue-500);
+                        bottom: -11px;
+                    }
+
+                    .mat-slider-thumb-label-text {
+                        color: var(--white);
+                    }
+                }
+            }
+        }
+
+        &.cfx-range-min-slider.mat-slider.mat-slider-disabled {
+            .mat-slider-wrapper {
+                .mat-slider-thumb-container {
+                    .mat-slider-thumb {
+                        border-color: var(--gray-300);
+                    }
+                }
+            }
+        }
+
+        &.cfx-range-max-slider.mat-slider.mat-slider-disabled {
+            .mat-slider-wrapper {
+                .mat-slider-track-wrapper {
+                    .mat-slider-track-fill,
+                    .mat-slider-track-background {
+                        background: var(--gray-200);
+                    }
+                }
+
+                .mat-slider-thumb-container {
+                    .mat-slider-thumb {
+                        border-color: var(--gray-300);
+                    }
+                }
+            }
+        }
+    }
+
+    .cfx-range-slider-min-label,
+    .cfx-range-slider-max-label {
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        color: var(--gray-700);
+        position: absolute;
+        bottom: 0;
+        padding: 0;
+    }
+
+    .cfx-range-slider-min-label {
+        left: 8px;
+    }
+
+    .cfx-range-slider-max-label {
+        right: 8px;
+    }
+}

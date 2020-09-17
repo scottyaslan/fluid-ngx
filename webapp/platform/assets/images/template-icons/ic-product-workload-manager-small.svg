@@ -1,0 +1,25 @@
+<!--
+  (c) 2018-2020 Cloudera, Inc. All rights reserved.
+
+  This code is provided to you pursuant to your written agreement with Cloudera, which may be the terms of the
+  Affero General Public License version 3 (AGPLv3), or pursuant to a written agreement with a third party authorized
+  to distribute this code.  If you do not have a written agreement with Cloudera or with an authorized and
+  properly licensed third party, you do not have any rights to this code.
+
+  If this code is provided to you under the terms of the AGPLv3:
+   (A) CLOUDERA PROVIDES THIS CODE TO YOU WITHOUT WARRANTIES OF ANY KIND;
+   (B) CLOUDERA DISCLAIMS ANY AND ALL EXPRESS AND IMPLIED WARRANTIES WITH RESPECT TO THIS CODE, INCLUDING BUT NOT
+       LIMITED TO IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE;
+   (C) CLOUDERA IS NOT LIABLE TO YOU, AND WILL NOT DEFEND, INDEMNIFY, OR HOLD YOU HARMLESS FOR ANY CLAIMS ARISING
+       FROM OR RELATED TO THE CODE; AND
+   (D) WITH RESPECT TO YOUR EXERCISE OF ANY RIGHTS GRANTED TO YOU FOR THE CODE, CLOUDERA IS NOT LIABLE FOR ANY
+       DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES INCLUDING, BUT NOT LIMITED
+       TO, DAMAGES RELATED TO LOST REVENUE, LOST PROFITS, LOSS OF INCOME, LOSS OF BUSINESS ADVANTAGE OR
+       UNAVAILABILITY, OR LOSS OR CORRUPTION OF DATA.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#196AED" d="M2 2v20h13.243L22 15.243V2z"/>
+        <path fill="#FFF" d="M13.866 4H20v1.712h-4.037v2.382h3.994v1.711h-3.994v2.554H20v1.711h-6.134V4zm-6.471 8.359c.732 0 1.305-.14 1.719-.421.413-.28.699-.66.856-1.141.156-.48.235-1.067.235-1.762 0-.694-.08-1.284-.243-1.769a2.148 2.148 0 0 0-.862-1.14c-.414-.276-.982-.414-1.705-.414H6.097v6.647h1.298zM4 4h3.737c1.636 0 2.825.456 3.566 1.37.742.912 1.113 2.134 1.113 3.665 0 1.55-.373 2.777-1.12 3.68-.747.904-1.933 1.355-3.559 1.355H4V4z"/>
+    </g>
+</svg>

@@ -1,0 +1,153 @@
+/*
+ * (c) 2018-2020 Cloudera, Inc. All rights reserved.
+ *
+ *  This code is provided to you pursuant to your written agreement with Cloudera, which may be the terms of the
+ *  Affero General Public License version 3 (AGPLv3), or pursuant to a written agreement with a third party authorized
+ *  to distribute this code.  If you do not have a written agreement with Cloudera or with an authorized and
+ *  properly licensed third party, you do not have any rights to this code.
+ *
+ *  If this code is provided to you under the terms of the AGPLv3:
+ *   (A) CLOUDERA PROVIDES THIS CODE TO YOU WITHOUT WARRANTIES OF ANY KIND;
+ *   (B) CLOUDERA DISCLAIMS ANY AND ALL EXPRESS AND IMPLIED WARRANTIES WITH RESPECT TO THIS CODE, INCLUDING BUT NOT
+ *       LIMITED TO IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE;
+ *   (C) CLOUDERA IS NOT LIABLE TO YOU, AND WILL NOT DEFEND, INDEMNIFY, OR HOLD YOU HARMLESS FOR ANY CLAIMS ARISING
+ *       FROM OR RELATED TO THE CODE; AND
+ *   (D) WITH RESPECT TO YOUR EXERCISE OF ANY RIGHTS GRANTED TO YOU FOR THE CODE, CLOUDERA IS NOT LIABLE FOR ANY
+ *       DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES INCLUDING, BUT NOT LIMITED
+ *       TO, DAMAGES RELATED TO LOST REVENUE, LOST PROFITS, LOSS OF INCOME, LOSS OF BUSINESS ADVANTAGE OR
+ *       UNAVAILABILITY, OR LOSS OR CORRUPTION OF DATA.
+ */
+
+:host {
+    display: contents;
+}
+
+.cfx-file-picker {
+    min-height: 79px;
+    height: 100%;
+    background-color: var(--white);
+    border: dashed 1px var(--gray-300);
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+
+    .cfx-file-picker-text {
+        color: var(--blue-500);
+        line-height: 1.5;
+    }
+
+    .cfx-file-picker-input {
+        width: 0;
+        height: 0;
+        opacity: 0;
+        position: absolute;
+        cursor: pointer;
+
+        &:focus,
+        &:active {
+            outline: none;
+        }
+    }
+
+    &:hover,
+    &:focus {
+        border: solid 1px var(--blue-600);
+
+        .cfx-file-picker-text {
+            color: var(--blue-600);
+        }
+    }
+
+    &.file-hover-error {
+        border: solid 1px var(--red-500);
+        background-color: var(--red-50);
+
+        .cfx-file-picker-text {
+            mat-icon {
+                color: var(--red-500);
+            }
+        }
+    }
+
+    &.file-hover-valid {
+        border: solid 1px var(--green-500);
+
+        .cfx-file-picker-text {
+            mat-icon {
+                color: var(--green-500);
+            }
+        }
+    }
+
+    &.file-selected {
+        min-height: 79px;
+        border: solid 1px var(--gray-200);
+        background-color: var(--gray-40);
+        color: var(--gray-900);
+        cursor: not-allowed;
+
+        .cfx-file-picker-text {
+            color: var(--gray-400);
+
+            mat-icon {
+                &.info-icon {
+                    width: 16px;
+                    height: 16px;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        &.multiple {
+            border: dashed 1px var(--gray-300);
+            background-color: var(--white);
+            cursor: pointer;
+
+            &:hover {
+                border: solid 1px var(--blue-600);
+            }
+
+            .cfx-file-picker-text {
+                color: var(--blue-500);
+            }
+        }
+
+        .cfx-file-selected-text {
+            width: 100%;
+            line-height: 24px;
+
+            mat-icon {
+                color: var(--green-500);
+
+                &.clear-icon {
+                    color: var(--gray-900);
+                    width: 20px;
+                    height: 20px;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        &.file-hover-error {
+            border: solid 1px var(--red-500);
+            background-color: var(--red-50);
+
+            .cfx-file-picker-text {
+                mat-icon {
+                    color: var(--red-500);
+                }
+            }
+        }
+
+        &.file-hover-valid {
+            border: solid 1px var(--green-500);
+
+            .cfx-file-picker-text {
+                mat-icon {
+                    color: var(--green-500);
+                }
+            }
+        }
+    }
+}

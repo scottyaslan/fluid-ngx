@@ -1,0 +1,130 @@
+/*
+ * (c) 2018-2020 Cloudera, Inc. All rights reserved.
+ *
+ *  This code is provided to you pursuant to your written agreement with Cloudera, which may be the terms of the
+ *  Affero General Public License version 3 (AGPLv3), or pursuant to a written agreement with a third party authorized
+ *  to distribute this code.  If you do not have a written agreement with Cloudera or with an authorized and
+ *  properly licensed third party, you do not have any rights to this code.
+ *
+ *  If this code is provided to you under the terms of the AGPLv3:
+ *   (A) CLOUDERA PROVIDES THIS CODE TO YOU WITHOUT WARRANTIES OF ANY KIND;
+ *   (B) CLOUDERA DISCLAIMS ANY AND ALL EXPRESS AND IMPLIED WARRANTIES WITH RESPECT TO THIS CODE, INCLUDING BUT NOT
+ *       LIMITED TO IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE;
+ *   (C) CLOUDERA IS NOT LIABLE TO YOU, AND WILL NOT DEFEND, INDEMNIFY, OR HOLD YOU HARMLESS FOR ANY CLAIMS ARISING
+ *       FROM OR RELATED TO THE CODE; AND
+ *   (D) WITH RESPECT TO YOUR EXERCISE OF ANY RIGHTS GRANTED TO YOU FOR THE CODE, CLOUDERA IS NOT LIABLE FOR ANY
+ *       DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES INCLUDING, BUT NOT LIMITED
+ *       TO, DAMAGES RELATED TO LOST REVENUE, LOST PROFITS, LOSS OF INCOME, LOSS OF BUSINESS ADVANTAGE OR
+ *       UNAVAILABILITY, OR LOSS OR CORRUPTION OF DATA.
+ */
+
+:host {
+    .step {
+        display: flex;
+        position: relative;
+        cursor: pointer;
+
+        &::after {
+            content: "";
+            width: 0;
+            height: calc(100% - 22px);
+            position: absolute;
+            border: 1px solid var(--gray-300);
+            top: 20px;
+            left: 9px;
+        }
+
+        &:last-of-type {
+            &::after {
+                border: none;
+            }
+        }
+
+        .step-icon {
+            flex-shrink: 0;
+            width: 20px;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 20px;
+            height: 20px;
+            font-size: 13px;
+            border: solid 1px var(--gray-300);
+            background: var(--gray-300);
+            box-sizing: border-box;
+
+            mat-icon {
+                height: 16px;
+                width: 16px;
+                padding-top: 1px;
+            }
+        }
+
+        .step-text {
+            padding-top: 3px;
+            padding-left: 9px;
+            padding-bottom: 32px;
+
+            .step-name {
+                font-size: 14px;
+                font-weight: 400;
+                color: var(--gray-700);
+            }
+
+            .step-inline-descriptions-container {
+                font-size: 12px;
+
+                .step-inline-description {
+                    position: relative;
+                    margin-top: 10px;
+
+                    i {
+                        font-size: 3px;
+                        top: 4px;
+                        left: 0;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+
+        &.active {
+            .step-icon {
+                color: var(--blue-500);
+                border: solid 1px var(--blue-500);
+                background: transparent;
+            }
+
+            .step-text {
+                .step-name {
+                    color: var(--gray-900);
+                }
+            }
+        }
+
+        &.complete {
+            &::after {
+                border: solid 1px var(--blue-500);
+            }
+
+            &:last-of-type {
+                &::after {
+                    border: none;
+                }
+            }
+
+            .step-icon {
+                color: var(--white);
+                background-color: var(--blue-500);
+                border: solid 1px var(--blue-500);
+            }
+        }
+
+        &.disabled {
+            cursor: auto;
+        }
+
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+}

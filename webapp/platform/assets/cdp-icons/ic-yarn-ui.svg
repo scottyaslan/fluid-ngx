@@ -1,0 +1,32 @@
+<!--
+  ~  (c) 2018-2020 Cloudera, Inc. All rights reserved.
+  ~
+  ~    This code is provided to you pursuant to your written agreement with Cloudera, which may be the terms of the
+  ~   Affero General Public License version 3 (AGPLv3), or pursuant to a written agreement with a third party authorized
+  ~   to distribute this code.  If you do not have a written agreement with Cloudera or with an authorized and
+  ~   properly licensed third party, you do not have any rights to this code.
+  ~
+  ~    If this code is provided to you under the terms of the AGPLv3:
+  ~    (A) CLOUDERA PROVIDES THIS CODE TO YOU WITHOUT WARRANTIES OF ANY KIND;
+  ~    (B) CLOUDERA DISCLAIMS ANY AND ALL EXPRESS AND IMPLIED WARRANTIES WITH RESPECT TO THIS CODE, INCLUDING BUT NOT
+  ~        LIMITED TO IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE;
+  ~    (C) CLOUDERA IS NOT LIABLE TO YOU, AND WILL NOT DEFEND, INDEMNIFY, OR HOLD YOU HARMLESS FOR ANY CLAIMS ARISING
+  ~        FROM OR RELATED TO THE CODE; AND
+  ~    (D) WITH RESPECT TO YOUR EXERCISE OF ANY RIGHTS GRANTED TO YOU FOR THE CODE, CLOUDERA IS NOT LIABLE FOR ANY
+  ~        DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES INCLUDING, BUT NOT LIMITED
+  ~        TO, DAMAGES RELATED TO LOST REVENUE, LOST PROFITS, LOSS OF INCOME, LOSS OF BUSINESS ADVANTAGE OR
+  ~        UNAVAILABILITY, OR LOSS OR CORRUPTION OF DATA.
+  ~
+  -->
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#545454" d="M4.27 11.475h1.27V5.421H4.27zM10.63 5.42v4.12c-.48.38-.91.83-1.27 1.33V5.42h1.27zM15.72 5.42v2.62a5.687 5.687 0 00-1.27-.01V5.42h1.27z"/>
+    <path fill="#E87800" d="M3 18.75h3.82v-3.632H3z"/>
+    <path fill="#828282" d="M8.13 13.68H3v-.98h5.39z"/>
+    <path fill="#4D8DE3" d="M3 6.632h3.82V3H3zM3 11.475h3.82V7.843H3zM11.91 7.84v.89c-.46.21-.89.49-1.28.81-.48.38-.91.83-1.27 1.33-.16.2-.29.4-.41.61h-.86V7.84h3.82zM13.18 6.632H17V3h-3.82zM8.09 6.632h3.82V3H8.09z"/>
+    <g>
+      <path d="M21 15a6 6 0 01-12 0 6 6 0 0112 0" fill="#545454"/>
+      <path d="M12.625 12.053v4.223c0 .419.1.725.3.917.2.192.479.287.834.287.74 0 1.117-.39 1.129-1.17v-4.257h1.323v4.214c0 .7-.22 1.254-.657 1.662-.44.407-1.036.61-1.795.61-.747 0-1.341-.197-1.78-.593-.44-.395-.664-.94-.672-1.63v-4.263h1.318zm6.068 0v6.398h-1.318v-6.398h1.318z" fill="#FFF"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+<!--
+  ~  (c) 2018-2020 Cloudera, Inc. All rights reserved.
+  ~
+  ~    This code is provided to you pursuant to your written agreement with Cloudera, which may be the terms of the
+  ~   Affero General Public License version 3 (AGPLv3), or pursuant to a written agreement with a third party authorized
+  ~   to distribute this code.  If you do not have a written agreement with Cloudera or with an authorized and
+  ~   properly licensed third party, you do not have any rights to this code.
+  ~
+  ~    If this code is provided to you under the terms of the AGPLv3:
+  ~    (A) CLOUDERA PROVIDES THIS CODE TO YOU WITHOUT WARRANTIES OF ANY KIND;
+  ~    (B) CLOUDERA DISCLAIMS ANY AND ALL EXPRESS AND IMPLIED WARRANTIES WITH RESPECT TO THIS CODE, INCLUDING BUT NOT
+  ~        LIMITED TO IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE;
+  ~    (C) CLOUDERA IS NOT LIABLE TO YOU, AND WILL NOT DEFEND, INDEMNIFY, OR HOLD YOU HARMLESS FOR ANY CLAIMS ARISING
+  ~        FROM OR RELATED TO THE CODE; AND
+  ~    (D) WITH RESPECT TO YOUR EXERCISE OF ANY RIGHTS GRANTED TO YOU FOR THE CODE, CLOUDERA IS NOT LIABLE FOR ANY
+  ~        DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES INCLUDING, BUT NOT LIMITED
+  ~        TO, DAMAGES RELATED TO LOST REVENUE, LOST PROFITS, LOSS OF INCOME, LOSS OF BUSINESS ADVANTAGE OR
+  ~        UNAVAILABILITY, OR LOSS OR CORRUPTION OF DATA.
+  ~
+  -->
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+  <defs>
+    <radialGradient cx="56.878%" cy="61.228%" fx="56.878%" fy="61.228%" r="52.43%" gradientTransform="scale(.85 1) rotate(-44.349 .619 .49)" id="ic-kudu_svg__a">
+      <stop stop-color="#24AAE1" offset="0%"/>
+      <stop stop-color="#0E75BC" offset="100%"/>
+    </radialGradient>
+  </defs>
+  <path d="M21.727 3.649c-.533.37-1.174.585-2.017.672-.549.058-.817.046-2.642-.125a88.908 88.908 0 00-2.091-.168c-1.211-.075-1.518-.028-2.56.395-.872.353-1.819.632-3.513 1.033-1.595.375-1.592.374-1.817.525-.266.177-.344.365-.348.822l-.001.384.162.017c.101.01.23-.022.334-.08.28-.158.478-.173.891-.061l1.156.31c.444.118.803.24.828.28.064.104-.184.588-.403.788-.097.09-.357.25-.574.357-.858.419-1.411 1.055-1.849 2.128-.451 1.107-.534 2.306-.233 3.374.056.198.112.444.125.543.022.159.013.18-.077.18-.116 0-1.198-.386-2.996-1.067-.691-.262-1.315-.476-1.389-.476-.315 0-.713.608-.713 1.09 0 .442.242.703 1.363 1.47 1.088.746 1.729 1.394 2.282 2.31.257.426.438.627.747.827.344.224.739.33 1.224.33.459 0 .56-.051.5-.252-.076-.253-.261-.414-.752-.657a3.492 3.492 0 01-1.382-1.203c-.252-.385-.489-.863-.449-.904.036-.037.774.403 2.68 1.593 2.014 1.26 1.983 1.241 2.648 1.565.362.178.732.31 1.104.433l3.173-5.616c-.306-.22-.636-.468-.973-.738-1.136-.916-1.982-1.474-2.607-1.725-.125-.049-.227-.121-.227-.158 0-.037.168-.331.375-.651 1.276-1.985 1.48-2.67 1.265-4.247-.143-1.046-.143-1.027-.015-1.163.261-.283 1.05-.637 1.78-.8.357-.077.72-.1 2.189-.135 1.707-.04 2.457-.098 3.421-.268.509-.09.799-.195 1.091-.4.259-.18.555-.533.563-.646v-.01c-.002-.016-.012-.025-.032-.025-.015 0-.123.067-.241.149zM12.225 20.18c.332.098.677.155 1.022.213l2.968-5.255c-.013-.006-.026-.006-.039-.01-.157-.064-.452-.248-.814-.5l-3.137 5.552zm1.6.306c.221.012.52.018.767.011.099-.006.175-.031.27-.043l2.719-4.815c-.29-.25-.582-.405-.727-.404-.025 0-.036-.004-.06-.004l-2.969 5.255zm2.129-.287c1.755-.637 2.355-2.122 2.423-2.99.025-.318-.077-.62-.231-.89l-2.192 3.88z" fill="url(#ic-kudu_svg__a)" fill-rule="evenodd"/>
+</svg>

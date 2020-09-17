@@ -1,0 +1,29 @@
+<!--
+  ~  (c) 2018-2020 Cloudera, Inc. All rights reserved.
+  ~
+  ~    This code is provided to you pursuant to your written agreement with Cloudera, which may be the terms of the
+  ~   Affero General Public License version 3 (AGPLv3), or pursuant to a written agreement with a third party authorized
+  ~   to distribute this code.  If you do not have a written agreement with Cloudera or with an authorized and
+  ~   properly licensed third party, you do not have any rights to this code.
+  ~
+  ~    If this code is provided to you under the terms of the AGPLv3:
+  ~    (A) CLOUDERA PROVIDES THIS CODE TO YOU WITHOUT WARRANTIES OF ANY KIND;
+  ~    (B) CLOUDERA DISCLAIMS ANY AND ALL EXPRESS AND IMPLIED WARRANTIES WITH RESPECT TO THIS CODE, INCLUDING BUT NOT
+  ~        LIMITED TO IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE;
+  ~    (C) CLOUDERA IS NOT LIABLE TO YOU, AND WILL NOT DEFEND, INDEMNIFY, OR HOLD YOU HARMLESS FOR ANY CLAIMS ARISING
+  ~        FROM OR RELATED TO THE CODE; AND
+  ~    (D) WITH RESPECT TO YOUR EXERCISE OF ANY RIGHTS GRANTED TO YOU FOR THE CODE, CLOUDERA IS NOT LIABLE FOR ANY
+  ~        DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES INCLUDING, BUT NOT LIMITED
+  ~        TO, DAMAGES RELATED TO LOST REVENUE, LOST PROFITS, LOSS OF INCOME, LOSS OF BUSINESS ADVANTAGE OR
+  ~        UNAVAILABILITY, OR LOSS OR CORRUPTION OF DATA.
+  ~
+  -->
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+  <defs>
+    <linearGradient x1="34.862%" y1="30.729%" x2="82%" y2="100%" id="ic-product-data-warehouse-sm_svg__a">
+      <stop stop-color="#8263C2" offset="0%"/>
+      <stop stop-color="#33058D" offset="100%"/>
+    </linearGradient>
+  </defs>
+  <path d="M18.343 12.517c-2.12.95-6.637.95-8.757 0v-1.751c1.212.404 2.793.606 4.374.606 1.59 0 3.17-.202 4.383-.617v1.762zm0 3.563c-2.12.94-6.637.94-8.757 0v-1.944c1.212.404 2.793.617 4.374.617 1.59 0 3.17-.213 4.383-.628v1.955zm0 3.339c-.303.294-1.79.8-4.383.8-2.585 0-4.071-.506-4.374-.8v-1.73c1.212.415 2.793.617 4.374.617 1.59 0 3.17-.202 4.383-.628v1.74zM13.96 8.842c1.846 0 3.124.253 3.824.507-2.073.668-5.566.668-7.64 0 .7-.254 1.979-.507 3.816-.507zm0-1.781c-1.808 0-6.031.243-6.031 2.49v9.959c0 2.247 4.223 2.49 6.03 2.49 1.819 0 6.04-.243 6.04-2.49V9.55c0-2.246-4.221-2.49-6.04-2.49zM9.567 3.78c1.865 0 3.087.344 3.617.618-1.894.809-5.312.809-7.214.01.539-.293 1.76-.627 3.597-.627zM6.863 15.875c-.716-.181-1.127-.401-1.197-.534v-1.983c.366.14.774.249 1.197.343v-1.556c-.444-.112-.861-.243-1.197-.417l-.01-2.206c.369.139.78.246 1.207.34v-.31c0-.443.093-.83.248-1.176-.547-.121-1.053-.275-1.454-.484V5.897c1.082.398 2.465.608 3.845.615 1.144-.385 2.518-.542 3.842-.576.039-.015.085-.024.124-.04v.038a20.57 20.57 0 011.666.024V4.612C15.134 2.192 10.873 2 9.567 2S4 2.193 4 4.612V15.34c0 1.394 1.414 2.046 2.863 2.35v-1.816z" fill="url(#ic-product-data-warehouse-sm_svg__a)" fill-rule="evenodd"/>
+</svg>

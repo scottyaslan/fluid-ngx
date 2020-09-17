@@ -1,0 +1,216 @@
+/*
+ * (c) 2018-2020 Cloudera, Inc. All rights reserved.
+ *
+ *  This code is provided to you pursuant to your written agreement with Cloudera, which may be the terms of the
+ *  Affero General Public License version 3 (AGPLv3), or pursuant to a written agreement with a third party authorized
+ *  to distribute this code.  If you do not have a written agreement with Cloudera or with an authorized and
+ *  properly licensed third party, you do not have any rights to this code.
+ *
+ *  If this code is provided to you under the terms of the AGPLv3:
+ *   (A) CLOUDERA PROVIDES THIS CODE TO YOU WITHOUT WARRANTIES OF ANY KIND;
+ *   (B) CLOUDERA DISCLAIMS ANY AND ALL EXPRESS AND IMPLIED WARRANTIES WITH RESPECT TO THIS CODE, INCLUDING BUT NOT
+ *       LIMITED TO IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE;
+ *   (C) CLOUDERA IS NOT LIABLE TO YOU, AND WILL NOT DEFEND, INDEMNIFY, OR HOLD YOU HARMLESS FOR ANY CLAIMS ARISING
+ *       FROM OR RELATED TO THE CODE; AND
+ *   (D) WITH RESPECT TO YOUR EXERCISE OF ANY RIGHTS GRANTED TO YOU FOR THE CODE, CLOUDERA IS NOT LIABLE FOR ANY
+ *       DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES INCLUDING, BUT NOT LIMITED
+ *       TO, DAMAGES RELATED TO LOST REVENUE, LOST PROFITS, LOSS OF INCOME, LOSS OF BUSINESS ADVANTAGE OR
+ *       UNAVAILABILITY, OR LOSS OR CORRUPTION OF DATA.
+ */
+
+#cfx-ui {
+    .cfx-input-wrapper {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+
+        &-with-error {
+            min-height: 75px;
+        }
+
+        label {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.43;
+            letter-spacing: 0.2px;
+            color: var(--gray-700);
+            padding: 0 0 var(--pad-xs) 0;
+
+            &.disabled {
+                color: var(--gray-400);
+            }
+        }
+
+        input {
+            height: 32px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 79px;
+        }
+
+        input,
+        textarea {
+            background-color: var(--white);
+            border-radius: 3px;
+            border: solid 1px var(--gray-600);
+            box-sizing: border-box;
+            color: var(--gray-900);
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.43;
+            letter-spacing: normal;
+            padding: 6px var(--pad-sm);
+            width: 100%;
+
+            &.error,
+            &.ng-dirty.ng-invalid {
+                border: solid 1px var(--red-500);
+                background-color: var(--red-50);
+            }
+
+            &::placeholder {
+                color: var(--gray-500);
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.43;
+                letter-spacing: normal;
+            }
+
+            &:hover {
+                border: solid 1px var(--blue-500);
+            }
+
+            &:focus {
+                box-shadow: 0 0 0 4px var(--blue-100);
+                border: solid 1px var(--blue-500);
+                outline: none;
+            }
+
+            &:read-only {
+                border: solid 1px var(--gray-300);
+                background-color: var(--gray-100);
+                color: var(--gray-700);
+
+                &::placeholder {
+                    color: var(--gray-700);
+                }
+            }
+
+            &:disabled {
+                border: solid 1px var(--gray-300);
+                cursor: not-allowed;
+                color: var(--gray-300);
+
+                &::placeholder {
+                    color: var(--gray-300);
+                }
+
+                :hover {
+                    border: solid 1px var(--gray-300);
+                }
+            }
+        }
+
+        mat-icon,
+        span {
+            position: absolute;
+
+            &.input-prefix {
+                height: 20px;
+                width: 20px;
+                line-height: 20px;
+                left: var(--pad-sm);
+                margin-top: 6px;
+
+                & + input {
+                    padding-left: 32px;
+                }
+            }
+
+            &.input-suffix {
+                height: 16px;
+                width: 16px;
+                right: var(--pad-sm);
+                margin-top: var(--margin-sm);
+
+                &.color-link {
+                    color: var(--blue-500);
+                    cursor: pointer;
+                }
+
+                & + input {
+                    padding-right: 28px;
+                }
+            }
+        }
+
+        .input-description {
+            color: #676b6e;
+            font-family: Roboto;
+            font-size: 12px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            margin-top: 4px;
+
+            &.error {
+                color: var(--red-500);
+                position: relative;
+                padding-left: 20px;
+
+                &::before {
+                    background: url("/platform/assets/custom-icons/error.svg");
+                    content: "";
+                    fill: var(--red-500);
+                    position: absolute;
+                    left: 0;
+                    top: -1px;
+                    height: 16px;
+                    width: 16px;
+                }
+            }
+        }
+    }
+
+    .cfx-input-error {
+        font-size: 12px;
+        line-height: 1.33;
+        position: relative;
+        color: var(--red-500);
+        padding: var(--pad-xs) var(--pad-xs) var(--pad-xs) 20px;
+
+        mat-icon {
+            position: absolute;
+            left: 0;
+            top: var(--pad-xs);
+        }
+    }
+
+    .mat-radio-label-content {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+// remove default minimal width of 180px
+mat-form-field .mat-form-field-wrapper .mat-form-field-infix {
+    width: auto;
+}
+
+mat-form-field .mat-form-field-wrapper {
+    height: 30px; // cfx input height - borders
+}

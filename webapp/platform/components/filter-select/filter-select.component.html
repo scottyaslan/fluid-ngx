@@ -1,0 +1,138 @@
+<!--
+  ~  (c) 2018-2020 Cloudera, Inc. All rights reserved.
+  ~
+  ~    This code is provided to you pursuant to your written agreement with Cloudera, which may be the terms of the
+  ~   Affero General Public License version 3 (AGPLv3), or pursuant to a written agreement with a third party authorized
+  ~   to distribute this code.  If you do not have a written agreement with Cloudera or with an authorized and
+  ~   properly licensed third party, you do not have any rights to this code.
+  ~
+  ~    If this code is provided to you under the terms of the AGPLv3:
+  ~    (A) CLOUDERA PROVIDES THIS CODE TO YOU WITHOUT WARRANTIES OF ANY KIND;
+  ~    (B) CLOUDERA DISCLAIMS ANY AND ALL EXPRESS AND IMPLIED WARRANTIES WITH RESPECT TO THIS CODE, INCLUDING BUT NOT
+  ~        LIMITED TO IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE;
+  ~    (C) CLOUDERA IS NOT LIABLE TO YOU, AND WILL NOT DEFEND, INDEMNIFY, OR HOLD YOU HARMLESS FOR ANY CLAIMS ARISING
+  ~        FROM OR RELATED TO THE CODE; AND
+  ~    (D) WITH RESPECT TO YOUR EXERCISE OF ANY RIGHTS GRANTED TO YOU FOR THE CODE, CLOUDERA IS NOT LIABLE FOR ANY
+  ~        DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES INCLUDING, BUT NOT LIMITED
+  ~        TO, DAMAGES RELATED TO LOST REVENUE, LOST PROFITS, LOSS OF INCOME, LOSS OF BUSINESS ADVANTAGE OR
+  ~        UNAVAILABILITY, OR LOSS OR CORRUPTION OF DATA.
+  ~
+  -->
+
+<div #wrapperElement
+     class="cfx-filter-select-wrapper"
+     [style.width]="width"
+     [ngClass]="{'flat': flat}">
+    <ng-container *ngIf="flat">
+        <ng-container *ngTemplateOutlet="flatButton"></ng-container>
+    </ng-container>
+    <ng-container *ngIf="!flat">
+        <ng-container *ngTemplateOutlet="raisedButton"></ng-container>
+    </ng-container>
+    <div class="cfx-filter-select-list"
+         *ngIf="isListOpen">
+        <div class="cfx-filter-select-search pad-left-md pad-right-md pad-bottom-sm"
+             *ngIf="searchable">
+            <div class="cfx-input-wrapper">
+                <mat-icon class="input-prefix"
+                          svgIcon="cfx:filter">
+                </mat-icon>
+                <input type="text"
+                       placeholder="Search"
+                       [(ngModel)]="search"
+                       dataQa="cfx-filter-select-list-search-field"
+                       #searchField />
+                <mat-icon class="input-suffix color-link"
+                          svgIcon="cfx:close"
+                          *ngIf="search"
+                          (click)="clearSearch($event)"
+                          dataQa="cfx-filter-select-list-search-clear">
+                </mat-icon>
+            </div>
+        </div>
+        <div class="pad-left-md pad-right-md pad-top-sm pad-bottom-sm"
+             *ngIf="multiple">
+            <button class="cfx-link cfx-pointer cfx-body-400 clear-btn"
+                    (click)="clearSelection()"
+                    #clearButton>
+                Clear Selection
+            </button>
+        </div>
+        <ul class="cfx-filter-select-list-items">
+            <li *ngFor="let option of options | filterBy:'title':search; trackBy:optionByValue"
+                class="cfx-filter-select-list-item">
+                <ng-container *ngIf="multiple">
+                    <mat-checkbox (change)="selectItem($event, option)"
+                                  [checked]="selectedItems.includes(option)"
+                                  dataQa="cfx-filter-select-list-item-{{option.title | lowercase | replaceAll:' ':'-'}}"
+                                  disableRipple
+                                  role="option"
+                                  tabindex="0"
+                                  #listOption
+                                  (keydown)="handleKeydown($event)"
+                                  [id]="option.value">
+                        <mat-icon *ngIf="option.icon"
+                                  svgIcon="cfx:{{option.icon}}">
+                        </mat-icon>
+                        {{ option.title }}
+                    </mat-checkbox>
+                </ng-container>
+                <ng-container *ngIf="!multiple">
+                    <div class="single-item-wrapper"
+                         (click)="selectSingleItem(option)"
+                         role="option"
+                         tabindex="0"
+                         (keydown)="handleKeydown($event, false, option)"
+                         [attr.id]="option.value"
+                         #listOption>
+                        <mat-icon *ngIf="option.icon"
+                                  svgIcon="cfx:{{option.icon}}">
+                        </mat-icon>
+                        {{ option.title }}
+                    </div>
+                </ng-container>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<ng-template #buttonText>
+    <div class="cfx-filter-select-button-texts">
+        <div class="cfx-filter-select-title cfx-section-heading cfx-uppercase">
+            {{ filterTitle }}
+        </div>
+        <div *ngIf="multiple">
+            {{ selectedItems?.length ? selectedItems?.length + ' of ' + options?.length : 'All - ' + (options?.length || 0) }}
+        </div>
+        <div *ngIf="!multiple">
+            {{ selectedItems[0]?.title }}
+        </div>
+    </div>
+    <mat-icon svgIcon="cfx:dropdown"></mat-icon>
+</ng-template>
+
+<ng-template #raisedButton>
+    <button mat-stroked-button
+            class="cfx-filter-select-trigger"
+            disableRipple
+            (click)="toggleList()"
+            [style.width]="width"
+            [ngClass]="{'open': isListOpen}"
+            [disabled]="!options || options.length === 0"
+            #trigger>
+        <ng-container *ngTemplateOutlet="buttonText"></ng-container>
+    </button>
+</ng-template>
+
+<ng-template #flatButton>
+    <button mat-button
+            class="cfx-filter-select-trigger"
+            disableRipple
+            (click)="toggleList()"
+            [style.width]="width"
+            [ngClass]="{'open': isListOpen}"
+            [disabled]="!options || options.length === 0"
+            #trigger>
+        <ng-container *ngTemplateOutlet="buttonText"></ng-container>
+    </button>
+</ng-template>

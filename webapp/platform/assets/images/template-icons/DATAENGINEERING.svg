@@ -1,0 +1,31 @@
+<!--
+  (c) 2018-2020 Cloudera, Inc. All rights reserved.
+
+  This code is provided to you pursuant to your written agreement with Cloudera, which may be the terms of the
+  Affero General Public License version 3 (AGPLv3), or pursuant to a written agreement with a third party authorized
+  to distribute this code.  If you do not have a written agreement with Cloudera or with an authorized and
+  properly licensed third party, you do not have any rights to this code.
+
+  If this code is provided to you under the terms of the AGPLv3:
+   (A) CLOUDERA PROVIDES THIS CODE TO YOU WITHOUT WARRANTIES OF ANY KIND;
+   (B) CLOUDERA DISCLAIMS ANY AND ALL EXPRESS AND IMPLIED WARRANTIES WITH RESPECT TO THIS CODE, INCLUDING BUT NOT
+       LIMITED TO IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE;
+   (C) CLOUDERA IS NOT LIABLE TO YOU, AND WILL NOT DEFEND, INDEMNIFY, OR HOLD YOU HARMLESS FOR ANY CLAIMS ARISING
+       FROM OR RELATED TO THE CODE; AND
+   (D) WITH RESPECT TO YOUR EXERCISE OF ANY RIGHTS GRANTED TO YOU FOR THE CODE, CLOUDERA IS NOT LIABLE FOR ANY
+       DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES INCLUDING, BUT NOT LIMITED
+       TO, DAMAGES RELATED TO LOST REVENUE, LOST PROFITS, LOSS OF INCOME, LOSS OF BUSINESS ADVANTAGE OR
+       UNAVAILABILITY, OR LOSS OR CORRUPTION OF DATA.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192">
+    <defs>
+        <linearGradient id="a" x1="26.347%" y1="30.729%" y2="100%">
+            <stop offset="0%" stop-color="#196AED"/>
+            <stop offset="100%" stop-color="#270E82"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="url(#a)" d="M0 0v192h127.131L192 127.131V0z"/>
+        <path fill="#FFF" d="M77.336 23.06h34.4v9.6h-22.64v13.36h22.4v9.6h-22.4v14.32h22.64v9.6h-34.4V23.06zM41.04 69.94c4.107 0 7.32-.786 9.64-2.36 2.32-1.573 3.92-3.706 4.8-6.4.88-2.693 1.32-5.986 1.32-9.88 0-3.892-.453-7.2-1.36-9.92-.907-2.72-2.52-4.853-4.84-6.4-2.32-1.546-5.507-2.32-9.56-2.32h-7.28v37.28h7.28zM22 23.06h20.96c9.173 0 15.84 2.56 20 7.68 4.16 5.12 6.24 11.974 6.24 20.56 0 8.694-2.093 15.574-6.28 20.64-4.188 5.067-10.84 7.6-19.96 7.6H22V23.06z"/>
+    </g>
+</svg>

@@ -1,0 +1,115 @@
+/*
+ *  (c) 2018-2020 Cloudera, Inc. All rights reserved.
+ *
+ *    This code is provided to you pursuant to your written agreement with Cloudera, which may be the terms of the
+ *   Affero General Public License version 3 (AGPLv3), or pursuant to a written agreement with a third party authorized
+ *   to distribute this code.  If you do not have a written agreement with Cloudera or with an authorized and
+ *   properly licensed third party, you do not have any rights to this code.
+ *
+ *    If this code is provided to you under the terms of the AGPLv3:
+ *    (A) CLOUDERA PROVIDES THIS CODE TO YOU WITHOUT WARRANTIES OF ANY KIND;
+ *    (B) CLOUDERA DISCLAIMS ANY AND ALL EXPRESS AND IMPLIED WARRANTIES WITH RESPECT TO THIS CODE, INCLUDING BUT NOT
+ *        LIMITED TO IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE;
+ *    (C) CLOUDERA IS NOT LIABLE TO YOU, AND WILL NOT DEFEND, INDEMNIFY, OR HOLD YOU HARMLESS FOR ANY CLAIMS ARISING
+ *        FROM OR RELATED TO THE CODE; AND
+ *    (D) WITH RESPECT TO YOUR EXERCISE OF ANY RIGHTS GRANTED TO YOU FOR THE CODE, CLOUDERA IS NOT LIABLE FOR ANY
+ *        DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES INCLUDING, BUT NOT LIMITED
+ *        TO, DAMAGES RELATED TO LOST REVENUE, LOST PROFITS, LOSS OF INCOME, LOSS OF BUSINESS ADVANTAGE OR
+ *        UNAVAILABILITY, OR LOSS OR CORRUPTION OF DATA.
+ *
+ */
+
+.flex-grid {
+    display: flex;
+}
+
+.flex-side-left {
+    margin-right: 10px;
+}
+
+.flex-side-right {
+    margin-left: 10px;
+}
+
+.flex-main {
+    flex-grow: 1;
+}
+
+.flex-grid-card > * {
+    flex-grow: 1;
+    padding: 15px;
+}
+
+.flex-grid-card > * + * {
+    margin-left: 10px;
+}
+
+.flex-grid-collapsible .flex-side {
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+    -webkit-font-smoothing: antialiased;
+
+    overflow: hidden;
+}
+
+.flex-side-open {
+    width: 240px;
+    min-width: 240px;
+}
+
+.flex-side-opening,
+.flex-side-closing {
+    min-width: 0;
+}
+
+.flex-side-close {
+    width: 0;
+}
+
+.flex-grid-collapsible .flex-side > * {
+    white-space: nowrap;
+}
+
+.flex-overflow-hidden .flex-side {
+    overflow: hidden;
+}
+
+.flex-grid.animate .flex-side {
+    -webkit-transition: min-width 0.8s ease;
+    -moz-transition: min-width 0.8s ease;
+    -o-transition: min-width 0.8s ease;
+    transition: min-width 0.8s ease;
+    -webkit-font-smoothing: antialiased;
+}
+
+.flex-grid.animate .flex-side > * {
+    word-wrap: normal;
+    white-space: nowrap;
+}
+
+.primary-space,
+.flex-primary {
+    flex-grow: 1;
+}
+
+.v-line-primary,
+.v-line-utility {
+    position: relative;
+}
+
+.v-line-primary .utility-space::before {
+    content: '';
+    border-right: 1px solid #d0dad7;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: -10px;
+}
+
+.tiles {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
