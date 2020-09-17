@@ -1,8 +1,14 @@
-# ngx-angular-cli-seed
+# fluid-ng-x
 
-The ngx-angular-cli-seed is a seed project for Angular applications written in TS. This project comes complete with SASS compilation and minification, Webpack build tools for bundling the application source into a single file, npm for dependency management and build scripts, themeing of preinstalled design systems (Angular Material), Internationalization (i18n), and TS unit testing and reporting with Karma and Jasmine.
+The fluid-ng-x is a project for Cloudera's fluidX UI/UX components library implemented in Angular.
 
-# Webapp
+This project comes complete with SASS compilation and minification, Angular CLI build tools for bundling the application source into a single file, npm for dependency management and build scripts, and TS unit testing and reporting with Karma and Jasmine.
+
+# fluid-ng-mat-x
+
+The fluid-ng-mat-x is where Cloudera's fluidX UI/UX components library implemented in Angular following the Angular Material Design Specification.
+
+# Demo 
 
 To start locally: `npm install && npm start`
 
